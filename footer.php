@@ -30,15 +30,15 @@
 					</div>
 					<div class="col-lg-2 col-md-6">
 						<h5>Office</h5>
-						<p>Corporate Office- <br>
+						<!--<p>Corporate Office- <br>
 							175 24th Street, OT- 35
 							London, UK 265
-						</p>
+						</p>-->
 						<div class="company-email">
-							<a href="#">info@roofix.com</a>
+							<a href="#">info@Umachioilgas.com</a>
 						</div>
 						<div class="phone-number">
-							<p>+18-4675826</p>
+							<p></p>
 						</div>
 
 					</div>
@@ -46,11 +46,13 @@
 						<h5>Links</h5>
 						<ul>
 							<li>
-								<a href="about.html">About</a>
-								<a href="services.html">Services</a>									
-								<a href="price.html">Pricing</a>
-								<a href="faq.html"> FAQ</a>
-								<a href="blog.html"> News</a>
+								<a href="">About</a>
+								<a href="">Services</a>									
+								<a href="">About Us </a>
+								<a href=""> Mobile Fuel Services</a>
+								<a href=""> HSE</a>
+								<a href=""> Industries</a>
+								<a href=""> Contact</a>
 							</li>
 						</ul>
 					</div>
