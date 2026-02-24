@@ -28,7 +28,7 @@
  	<!-- Owl Carousel CSS -->
  	<link href="assets/css/owl.carousel.css" rel="stylesheet">
  	<!-- Style CSS -->
- 	<link href="assets/css/style.css" rel="stylesheet">
+ 	<link rel="stylesheet"  href="assets/css/style.css?v=<?php echo filemtime('assets/css/style.css');?>" >
  	<!-- Responsive CSS -->
  	<link href="assets/css/responsive.css" rel="stylesheet">
 
