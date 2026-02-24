@@ -23,7 +23,7 @@
 				<div class="row gy-4">
 					<div class="col-lg-4 col-md-6 col-sm-12">
 						<a href="index-2.html" class="logo">
-							<img src="assets/img/logo-white.png" alt="fossil-logo">
+							<img style="width: 200px" src="assets/img/logo2.png" alt="Umachioilgas-logo">
 						</a>
 						<p>We provide the best legal services <br> to deliver superior performance.
 						</p>
@@ -79,7 +79,7 @@
 		<div class="container">
 			<div class="row justify-content-center align-items-center justify-content-center">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<p class="copyright-line">© 2024 Fossil. All rights reserved.</p>
+					<p class="copyright-line">© 2024 Umachioilgas. All rights reserved.</p>
 				</div>
 				<div class="col-lg-6 col-md-6 col-xs-12 text-md-end">
 					<p class="privacy">Privacy Policy | Terms &amp; Conditions</p>
