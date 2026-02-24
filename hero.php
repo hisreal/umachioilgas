@@ -7,7 +7,7 @@
  						<div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
  							<div class="section-title">
  								
-								<h1>Nigeria’s Reliable <br> Mobile Fuel Partner.</h1> 								
+								<h1 style="top: 0px">Nigeria’s Reliable <br> Mobile Fuel Partner.</h1> 								
  								<p> Fuel delivered wherever you need it, 365 days a year, at the same price as the station</p>
  							</div>
  						</div>
@@ -23,7 +23,6 @@
  					<div class="row justify-content-center">
  						<div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
  							<div class="section-title">
- 								<h6>Since in 1995</h6>
  								<h1>We are leading <br> <b>Filling Station</b></h1>
  								<p> Fuel Revolution, in modern history, the process of change from an agrarian <br>and handicraft economy to one dominated by fuel and refueling services.</p>
  							</div>

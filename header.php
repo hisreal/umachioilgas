@@ -54,14 +54,14 @@
 
  	<!-- Header Top Area -->
 
- 	<div class="header-top dark-bg">
+ 	<!--<div class="header-top dark-bg">
  		<div class="container">
  			<div class="row">
  				<div class="col-lg-6 col-md-12 col-sm-12">
- 					<!--<div class="contact-info">
+ 					<div class="contact-info">
  						<i class="las la-envelope"></i> info@fossil.com
  						<i class="las la-map-marker"></i> 66, Broklyn St, New York, USA
-						</div>-->
+						</div>
  				</div>
  				<div class="col-lg-6 col-md-12 col-sm-12 text-end">
  					<div class="site-info">
@@ -76,7 +76,7 @@
  				</div>
  			</div>
  		</div>
- 	</div>
+ 	</div>-->
 
  	<!-- Header Area -->
 

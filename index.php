@@ -6,22 +6,20 @@
  			<div class="row align-items-center">
  				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
  					<div class="info-content-area">
- 						<div class="section-title">
- 							<h6>About Us</h6>
- 						</div>
+ 						
  						<p>U-Machi Oil & Gas Ltd is a trusted indigenous energy company providing bulk petroleum supply, 
 							retail distribution, and mobile fuel delivery services across Rivers State and Nigeria.</p>
 
 						<p>We ensure safe, timely, and efficient energy delivery because your operations depend on it.
 						</p>
- 						<a href="about.php" class="main-btn">Learn More</a>
+ 						<a href="about.php" class="main-btn">Request a Quote</a>
  					</div>
  				</div>
 
  				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
 					
  					<div class="info-img">
- 						<img src="assets/img/slider/banner.png" alt="">
+ 						<img src="assets/img/slider/hero1.png" alt="">
 
 						 
  					</div>
@@ -127,25 +125,25 @@
  			<div class="row">
  				<div class="col-lg-3 col-md-6 col-sm-12 ">
  					<div class="xtra-serve-area mt-30 wow fadeInLeft" data-wow-delay=".3s">
- 						<img src="assets/img/xtra/01.jpg" alt="">
+ 						<img src="assets/img/one (1).jpg" alt="">
  						<h5>Certified Safety <br>Standards</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInLeft" data-wow-delay=".4s">
- 						<img src="assets/img/xtra/02.jpg" alt="">
+ 						<img src="assets/img/one (7).jpg" alt="">
  						<h5>Quality Assured <br>Products</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInRight" data-wow-delay=".4s">
- 						<img src="assets/img/xtra/03.jpg" alt="">
+ 						<img src="assets/img/one (6).jpg" alt="">
  						<h5>Professional <br>Operations Team</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInRight" data-wow-delay=".3s">
- 						<img src="assets/img/xtra/04.jpg" alt="">
+ 						<img src="assets/img/one (5).jpg" alt="">
  						<h5>Fast Delivery <br>Turnaround</h5>
  					</div>
  				</div>
@@ -161,7 +159,7 @@
                     <div class="faq-content-wrap">
                         <div class="section-title">
                             <h6>FAQ</h6>
-                            <h2>Frequently Asked Question</h2>
+                          
                         </div>
                         <div class="cp-custom-accordion mt-20">
                             <div class="accordions" id="accordionExample">
@@ -217,7 +215,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 align-items-end">
                     <div class="faq-img-wrap">
-                        <img src="assets/img/faq-img.jpg" alt="">
+                        <img s src="assets/img/slider/banner.png" alt="">
                     </div>
                 </div>
             </div>
@@ -233,7 +231,6 @@
 					<div class="col-lg-12 text-center ">
 						<div class="section-title">
 							<h6>Testimonial</h6>
-							<h2>What Our Clients Say About Us</h2>
 						</div>
 					</div>
 				</div>

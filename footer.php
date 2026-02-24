@@ -29,11 +29,9 @@
 						</p>
 					</div>
 					<div class="col-lg-2 col-md-6">
-						<h5>Office</h5>
-						<!--<p>Corporate Office- <br>
-							175 24th Street, OT- 35
-							London, UK 265
-						</p>-->
+						<h5>Contact Details </h5>
+						<p>KM 19,PH/ABA Expressway, Iriebe-Portharcourt, Oyigbo L.G.A, Rivers State, Nigeria
+						</p>
 						<div class="company-email">
 							<a href="#">info@Umachioilgas.com</a>
 						</div>
@@ -81,7 +79,7 @@
 		<div class="container">
 			<div class="row justify-content-center align-items-center justify-content-center">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<p class="copyright-line">© 2024 Umachioilgas. All rights reserved.</p>
+					<p class="copyright-line">© 2026 Umachi Oil and Gas. All rights reserved.</p>
 				</div>
 				<div class="col-lg-6 col-md-6 col-xs-12 text-md-end">
 					<p class="privacy">Privacy Policy | Terms &amp; Conditions</p>

@@ -1280,7 +1280,7 @@ textarea:focus::-webkit-input-placeholder {
 	background-color: #ddd;
 	color: #fff;
 	width: 100%;
-	height: 800px;
+	height: 400px;
 	display: table;
 	position: relative;
 	z-index: 1;
