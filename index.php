@@ -9,9 +9,10 @@
  						<div class="section-title">
  							<h6>About Us</h6>
  						</div>
- 						<p>U-Machi Oil & Gas Ltd is a trusted indigenous energy company providing bulk petroleum supply, retail distribution, and mobile fuel delivery services across Rivers State and Nigeria.
+ 						<p>U-Machi Oil & Gas Ltd is a trusted indigenous energy company providing bulk petroleum supply, 
+							retail distribution, and mobile fuel delivery services across Rivers State and Nigeria.</p>
 
-						We ensure safe, timely, and efficient energy delivery because your operations depend on it.
+						<p>We ensure safe, timely, and efficient energy delivery because your operations depend on it.
 						</p>
  						<a href="about.php" class="main-btn">Learn More</a>
  					</div>
@@ -42,7 +43,7 @@
 							products with unmatched reliability. We serve businesses, institutions,
 							 fleet operators, estates, and construction companies with dependable 
 							 fuel supply solutions.</p>
-						 <a href="" class="main-btn">Read More</a>
+						 <a href="" class="main-btn">Know More</a>
 
 
  					</div>
