@@ -1356,9 +1356,9 @@ textarea:focus::-webkit-input-placeholder {
 	left: 15px;
 	top: 50%;
 	margin-top: -25px;
-	color: #ed32378c;
-	visibility: hidden;
-	opacity: 0;
+	background: #ed3237;
+	color: #fff;
+	border-color: #ed3237;
 	-webkit-transition: all .3s ease-out 0s;
 	transition: all .3s ease-out 0s;
 }
@@ -1366,13 +1366,18 @@ textarea:focus::-webkit-input-placeholder {
 .homepage-slides .owl-nav button.owl-next {
 	left: auto;
 	right: 15px;
+	background: #ed3237;
+	color: #fff;
+	border-color: #ed3237;
 }
 
 
 .homepage-slides:hover .owl-nav button.owl-prev,
 .homepage-slides:hover .owl-nav button.owl-next {
 	visibility: visible;
-	opacity: .5;
+	background: #ed3237;
+	color: #fff;
+	border-color: #ed3237;
 }
 
 .homepage-slides .owl-nav button.owl-prev:hover,
@@ -1380,7 +1385,7 @@ textarea:focus::-webkit-input-placeholder {
 	background: #ed3237;
 	color: #fff;
 	border-color: #ed3237;
-	opacity: 1;
+	
 }
 
 .hero-area-content {

@@ -338,7 +338,7 @@
  				<div class="col-lg-4 col-md-6 col-sm-12">
  					<div class="single-facility-area wow fadeInLeft" data-wow-delay=".2s">
  						<div class="facility-icon">
- 							<img src="assets/img/icon/grocery.png" alt="">
+ 							<img style="width: 50px"  src="assets/img/icon/grocery.png" alt="">
  						</div>
  						<h4>Mini Mart</h4>
 
@@ -347,7 +347,7 @@
  				<div class="col-lg-4 col-md-6 col-sm-12">
  					<div class="single-facility-area wow fadeInLeft" data-wow-delay=".4s">
  						<div class="facility-icon">
- 							<img src="assets/img/icon/cutlery.png" alt="">
+ 							<img style="width: 50px"  src="assets/img/icon/cutlery.png" alt="">
  						</div>
  						<h4>Restaurant</h4>
 
@@ -356,7 +356,7 @@
  				<div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".6s">
  					<div class="single-facility-area">
  						<div class="facility-icon">
- 							<img src="assets/img/icon/car-wash.png" alt="">
+ 							<img style="width: 50px" src="assets/img/icon/car-wash.png" alt="">
  						</div>
  						<h4>Car Wash</h4>
 
