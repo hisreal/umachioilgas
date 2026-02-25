@@ -18,7 +18,7 @@
 	}
 
 	.single-slide-item h1 {
-		font-size: 70px;
+			font-size: 70px;
 	}
 
 	.section-title h2 {
@@ -273,7 +273,7 @@
 
 	.single-slide-item h1 {
 		font-size: 65px;
-		line-height: 75px;
+		line-height: 20px;
 	}
 
 	.hero-area-content .main-btn {
@@ -645,7 +645,7 @@
 
 	.single-slide-item {
 		text-align: center;
-		height: 600px;
+		height: 400px;
 	}
 
 	.single-slide-item h1 {

@@ -1286,6 +1286,13 @@ textarea:focus::-webkit-input-placeholder {
 	z-index: 1;
 }
 
+@media (max-width: 768px) {
+            .single-slide-item {
+                height: 100px;
+               
+            }
+		}
+
 .single-slide-item h1 {
 	color: #fff;
 	font-size: 80px;

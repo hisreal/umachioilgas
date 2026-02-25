@@ -30,7 +30,7 @@
  	<!-- Style CSS -->
  	<link rel="stylesheet"  href="assets/css/style.css?v=<?php echo filemtime('assets/css/style.css');?>" >
  	<!-- Responsive CSS -->
- 	<link href="assets/css/responsive.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="assets/css/responsive.css?v=<?php echo filemtime('assets/css/responsive.css');?>" >
 
 
  	<!-- jquery -->
