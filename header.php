@@ -27,6 +27,14 @@
  	<link href="assets/css/flaticon.css" rel="stylesheet">
  	<!-- Owl Carousel CSS -->
  	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+
  	<!-- Style CSS -->
  	<link rel="stylesheet"  href="assets/css/style.css?v=<?php echo filemtime('assets/css/style.css');?>" >
  	<!-- Responsive CSS -->
@@ -104,12 +112,12 @@
  									<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
  										<ul class="navbar-nav">
  											<li class="nav-item">
- 												<a class="nav-link" href="#">Home</a>
+ 												<a class="nav-link" href="index.php">Home</a>
  											</li>
  											
 
  											<li class="nav-item">
- 												<a class="nav-link" href="#">About</a>
+ 												<a class="nav-link" href="about.php">About</a>
  											</li>
 
 											<li class="nav-item">

@@ -56,7 +56,8 @@
 						<h5>Links</h5>
 						<ul>
 							<li>
-								<a href="">About</a>
+								<a href="index.php">Home</a>
+								<a href="about.php">About</a>
 								<a href="">Services</a>									
 								<a href="">About Us </a>
 								<a href=""> Mobile Fuel Services</a>
@@ -124,6 +125,31 @@
  	<!-- Main JS -->
  	<script src="assets/js/main.js"></script>
 
+		<!-- jQuery FIRST -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS SECOND -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	<script>
+$(document).ready(function(){
+
+    $(".homepage-slides").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000, // 5 seconds
+        autoplayHoverPause: true,
+        nav: false,
+        dots: true,
+        animateOut: 'fadeOut',
+		autoHeight: true,
+        smartSpeed: 1000
+    });
+
+});
+
+</script>
  </body>
 
  

@@ -4723,7 +4723,17 @@ a.reply-btn {
   }
 
   
+.core-value-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+}
 
+.core-value-item i {
+	font-size: 20px;
+	color: #ff5e14; /* Change to your brand color */
+}
 
 
   .serv-content ul {
