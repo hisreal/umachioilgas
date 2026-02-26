@@ -82,3 +82,27 @@
 	.flaticon-24-hours-1:before {
 		content: "\f10c";
 	}
+
+	.flaticon-mini-mart:before {
+		content: "\f10d";
+	}
+
+	.flaticon-supermarket:before {
+		content: "\f10e";
+	}
+
+	.flaticon-restaurant:before {
+		content: "\f10f";
+	}
+
+	.flaticon-dining:before {
+		content: "\f110";
+	}
+
+	.flaticon-car-wash-1:before {
+		content: "\f111";
+	}
+
+	.flaticon-auto-wash:before {
+		content: "\f112";
+	}

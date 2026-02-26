@@ -56,7 +56,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&amp;display=swap");
 
 
-/*	Theme Color: #ed3237
+/*	Theme Color: #F68B34
 	Primary Color: #f68b34*/
 
 /* Common CSS 
@@ -110,7 +110,7 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 	font-family: 'Outfit', sans-serif;
-	color: #ed3237;
+	color: #F68B34;
 	font-size: 16px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
@@ -417,7 +417,7 @@ hr {
 
 .section-title h6 {
 	display: inline-block;
-	color: #ed3237;
+	color: #F68B34;
 	font-family: 'Outfit', sans-serif;
 	font-size: 15px;
 	font-weight: 500;
@@ -435,7 +435,7 @@ hr {
 	height: 2px;
 	left: 0;
 	top: 50%;
-	background: #ed3237;
+	background: #F68B34;
 	margin-top: -1px;
 }
 
@@ -444,7 +444,7 @@ hr {
 
 .main-btn {
 	display: inline-block;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
@@ -502,7 +502,7 @@ button[type="submit"] {
 	border: none;
 	border-radius: 4px;
 	display: inline-block;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 	padding: 15px 30px;
 	margin: 30px 0;
@@ -552,7 +552,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .green-bg {
-	background: #ed3237;
+	background: #F68B34;
 }
 
 
@@ -616,7 +616,7 @@ textarea:focus::-webkit-input-placeholder {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #ed3237;
+	background-color: #F68B34;
 	z-index: 999999;
 }
 
@@ -678,7 +678,7 @@ textarea:focus::-webkit-input-placeholder {
 /* Scroll Top 
 ============== */
 .go-top {
-	background-color: #ed3237;
+	background-color: #F68B34;
 	color: #FFF;
 	width: 40px;
 	height: 40px;
@@ -767,7 +767,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .contact-info i {
-	color: #ed3237;
+	color: #F68B34;
 	font-size: 20px;
 	margin-right: 2px;
 }
@@ -849,15 +849,15 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .header-area .main-menu .navbar-nav .nav-link.active {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 #header-2.header-area .main-menu .navbar-nav .nav-link.active {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 #header-3.header-area .main-menu .navbar-nav .nav-link.active {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .header-area .main-menu li.nav-item:hover > a {
@@ -1084,7 +1084,7 @@ textarea:focus::-webkit-input-placeholder {
 	position: relative;
 	z-index: 1;
 	font-size: 30px;
-	color: #ed3237;
+	color: #F68B34;
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -1191,7 +1191,7 @@ textarea:focus::-webkit-input-placeholder {
 	height: 4px;
 	top: 0;
 	left: 0;
-	background: #ed3237;
+	background: #F68B34;
 	visibility: hidden;
 	opacity: 0;
 }
@@ -1235,7 +1235,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .main-menu .sub-menu li:hover > a {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .dropdown-toggle::after {
@@ -1321,7 +1321,7 @@ textarea:focus::-webkit-input-placeholder {
 	height: 1px;
 	left: 0;
 	top: 50%;
-	background: #ed3237;
+	background: #F68B34;
 	margin-top: -1px;
 }
 
@@ -1356,9 +1356,9 @@ textarea:focus::-webkit-input-placeholder {
 	left: 15px;
 	top: 50%;
 	margin-top: -25px;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
-	border-color: #ed3237;
+	border-color: #F68B34;
 	-webkit-transition: all .3s ease-out 0s;
 	transition: all .3s ease-out 0s;
 }
@@ -1366,25 +1366,25 @@ textarea:focus::-webkit-input-placeholder {
 .homepage-slides .owl-nav button.owl-next {
 	left: auto;
 	right: 15px;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
-	border-color: #ed3237;
+	border-color: #F68B34;
 }
 
 
 .homepage-slides:hover .owl-nav button.owl-prev,
 .homepage-slides:hover .owl-nav button.owl-next {
 	visibility: visible;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
-	border-color: #ed3237;
+	border-color: #F68B34;
 }
 
 .homepage-slides .owl-nav button.owl-prev:hover,
 .homepage-slides .owl-nav button.owl-next:hover {
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
-	border-color: #ed3237;
+	border-color: #F68B34;
 	
 }
 
@@ -1436,7 +1436,7 @@ textarea:focus::-webkit-input-placeholder {
 .promo-area .single-counter-box .counter-number span {
 	font-size: 50px;
 	font-weight: 500;
-	color: #ed3237;
+	color: #F68B34;
 	font-family: 'Teko';
 	letter-spacing: 2px;
 	background: #ddd;
@@ -1474,7 +1474,7 @@ p.highlight i {
     top: 0;
     left: 0;
     font-size: 24px;
-    color: #ed3237;
+    color: #F68B34;
 }
 
 /* .info-content-area p.highlight:before {
@@ -1484,20 +1484,20 @@ p.highlight i {
 	height: 15px;
 	top: 5px;
 	left: 0;
-	background: #ed3237;
+	background: #F68B34;
 } */
 
 .info-content-area .main-btn {
 	background: transparent;
-	color: #ed3237;
+	color: #F68B34;
 	border: 2px solid;
 	margin: 40px 0;
 }
 
 .info-content-area .main-btn:hover {
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
-	border-color: #ed3237;
+	border-color: #F68B34;
 }
 
 .founded {
@@ -1518,7 +1518,7 @@ p.highlight i {
 	font-size: 140px;
 	font-weight: 600;
 	line-height: 120px;
-	background-color: #ed3237;
+	background-color: #F68B34;
 	background-image: url(../img/trans-bg.html);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1534,7 +1534,7 @@ p.highlight i {
 	font-weight: 300;
 	line-height: 34px;
 	letter-spacing: 1px;
-	color: #ed3237;
+	color: #F68B34;
 	border-left: 5px solid #eee;
 	padding-left: 35px;
 	margin-top: 25px;
@@ -1552,7 +1552,7 @@ p.highlight i {
 .experience-wrap {
 	width: 200px;
 	height: 200px;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 	display: inline-flex;
 	align-items: center;
@@ -1640,12 +1640,13 @@ p.highlight i {
 }
 
 .single-serv-item a:hover {
-	color: #ed3237;
+	color: #F68B34;
 	opacity: .8;
 }
 
 .single-serv-item.active {
-	background: #020c1f;
+	background: #000000;
+	color: white;
 }
 
 .single-serv-item.active h5 {
@@ -1653,7 +1654,7 @@ p.highlight i {
 }
 
 .single-serv-item.active .serv-icon i:before {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .single-serv-item.active .serv-content {
@@ -1661,7 +1662,7 @@ p.highlight i {
 }
 
 .single-serv-item:hover .serv-icon i:before {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 /* Xtra Service Section
@@ -1721,7 +1722,7 @@ p.highlight i {
 	position: absolute;
 	bottom: 25px;
 	left: 25px;
-	color: #ed3237;
+	color: #F68B34;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 500;
@@ -1893,7 +1894,7 @@ p.highlight i {
 .pop-up-video a.video-play-btn {
 	font-size: 20px;
 	color: #fff;
-	border: 2px solid #ed3237;
+	border: 2px solid #F68B34;
 	border-radius: 50%;
 	padding: 15px;
 	width: 70px;
@@ -1905,7 +1906,7 @@ p.highlight i {
 	left: 50%;
 	margin-left: -35px;
 	margin-top: -35px;
-	background: #ed3237;
+	background: #F68B34;
 	cursor: pointer;
 	z-index: 9;
 }
@@ -2003,12 +2004,12 @@ p.highlight i {
 
 .styled-faq .panel .panel-heading h6 a[aria-expanded=true] i.fa.fa-angle-up {
 	display: block;
-	color: #ed3237;
+	color: #F68B34;
 }
 facility
 .styled-faq .panel .panel-heading h6 a[aria-expanded=false] i.fa.fa-angle-down {
 	display: block;
-	color: #ed3237;
+	color: #F68B34;
 }
 
 
@@ -2016,7 +2017,7 @@ facility
 ============== */
 
 .facility-area{
-	background-image: url(../img/banner-bg.jpg);
+	background-image: url(../img/Umachi.png);
 	background-size: cover;
 	position: relative;
 	z-index: 1;
@@ -2126,7 +2127,7 @@ facility
 }
 
 .blog-area .blog-content h5 a:hover {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .blog-area a.read-more {
@@ -2134,7 +2135,7 @@ facility
 	font-size: 16px;
 	font-weight: 500;
 	margin: 10px 0 0;
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .blog-area a.read-more:hover {
@@ -2153,7 +2154,7 @@ facility
 }
 
 .blog-area .blog-bg span {
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 	padding: 10px;
 	display: inline-block;
@@ -2198,7 +2199,7 @@ facility
 ============== */
 
 .cta-area {
-	background: #ed3237;
+	background: #F68B34;
 	height: 250px;
 	display: flex;
 	justify-content: center;
@@ -2260,7 +2261,7 @@ facility
 
 .newsletter-content {
 	height: 250px;
-	background: #ed3237;
+	background: #F68B34;
 	padding: 50px;
 	border-radius: 5px;
 	position: relative;
@@ -2475,7 +2476,7 @@ facility
 	margin-top: -40px;
 	position: relative;
 	z-index: 9;
-	border-top: 10px solid #ed3237;
+	border-top: 10px solid #F68B34;
 }
 
 .about-bg-wrapper {
@@ -2552,7 +2553,7 @@ facility
 }
 
 #service-2 .single-service-area:hover {
-	background: #ed3237;
+	background: #F68B34;
 }
 
 #service-2 .single-service-area:hover .service-icon i:before {
@@ -2613,7 +2614,7 @@ facility
   }
   
   .service-icon i:before {
-	color: #ed3237;
+	color: #F68B34;
   }
   
   .service-single .service-icon {
@@ -2664,7 +2665,7 @@ facility
   
   ul.service-list li i {
 	font-weight: 600;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 	border-radius: 50%;
 	padding: 4px;
@@ -2681,7 +2682,7 @@ facility
 	right: 0;
 	width: 90%;
 	height: 4px;
-	background: #ed3237;
+	background: #F68B34;
 	transition: 0.3s ease-in-out;
 	border-radius: 0 0 12px 0;
   }
@@ -2701,7 +2702,7 @@ facility
   .service-item-wrap .owl-dots button.owl-dot.active span {
 	width: 35px;
 	height: 6px;
-	background: #ed3237;
+	background: #F68B34;
   }
   
   .service-item-wrap .owl-dots {
@@ -2752,7 +2753,7 @@ facility
 	transform: translateX(-50%);
 	width: 100%;
 	height: 2px;
-	background-color: #ed3237;
+	background-color: #F68B34;
   }
   
   .service-area.service-2 {
@@ -2814,7 +2815,7 @@ facility
   .services_icon {
 	height: 90px;
 	width: 90px;
-	background-color: #ed3237;
+	background-color: #F68B34;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2919,7 +2920,7 @@ facility
 }
 
 .single-counter-box h6 {
-	color: #ed3237;
+	color: #F68B34;
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -2940,7 +2941,7 @@ facility
 .single-feature-item .num {
 	font-size: 24px;
 	line-height: 27px;
-	background: #ed3237;
+	background: #F68B34;
 	padding: 10px;
 	color: #fff;
 	width: 50px;
@@ -2967,7 +2968,7 @@ facility
 	right: -50px;
 	width: 100%;
 	height: 100%;
-	background: #ed3237;
+	background: #F68B34;
 	z-index: -1;
 }
 
@@ -3050,7 +3051,7 @@ facility
 }
 
 .quotation-dtl {
-	background-color: #ed3237;
+	background-color: #F68B34;
 	width: 100%;
 	height: 70px;
 	display: flex;
@@ -3082,7 +3083,7 @@ facility
 }
 
 .quotation-dtl a:hover {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .form-group label {
@@ -3169,7 +3170,7 @@ facility
 }
 
 .barfiller .fill {
-	background: #ed3237 !important;
+	background: #F68B34 !important;
 }
 
 #about-3 .choose-certify {
@@ -3183,7 +3184,7 @@ facility
 
 #about-3 .choose-certify i {
 	font-size: 45px;
-	color: #ed3237;
+	color: #F68B34;
 }
 
 #about-3 .choose-certify h5 {
@@ -3214,7 +3215,7 @@ facility
 .experience-wrap {
 	width: 210px;
     height: 230px;
-    background: #ed3237;
+    background: #F68B34;
     color: #fff;
     display: inline-flex;
     align-items: center;
@@ -3272,7 +3273,7 @@ facility
 
 .feat-icon i:before {
 	font-size: 60px;
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .feat-icon {
@@ -3333,7 +3334,7 @@ facility
 }
 
 #cta-2.cta-area h6 {
-	color: #ed3237;
+	color: #F68B34;
 	text-transform: uppercase;
 	font-size: 16px;
 	margin-bottom: 10px;
@@ -3424,7 +3425,7 @@ facility
 	height: 100px;
 	top: -18px;
 	left: 65px;
-	background: #ed3237;
+	background: #F68B34;
 	opacity: .2;
 }
 
@@ -3563,7 +3564,7 @@ facility
 }
 
 .team-social i {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .single-team-member:hover .team-social {
@@ -3602,7 +3603,7 @@ facility
 
 
 .single-client-item:hover {
-	border-bottom: 3px solid #ed3237;
+	border-bottom: 3px solid #F68B34;
 }
 
 .single-client-item img {
@@ -3636,7 +3637,7 @@ facility
 
 .testimonial-icon i {
 	font-size: 25px;
-	background: #ed3237;
+	background: #F68B34;
 	padding: 15px;
 	position: absolute;
 	top: -20px;
@@ -3655,7 +3656,7 @@ facility
 .testimonial-area .owl-dots button.owl-dot.active span {
 	width: 35px;
 	height: 10px;
-	background: #ed3237;
+	background: #F68B34;
 }
 
 .testimonial-area .client-carousel .owl-dots {
@@ -3690,7 +3691,7 @@ facility
 .contact-section .contact-info i {
 	font-size: 30px;
 	margin-left: 0;
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 	padding: 10px;
 	border-radius: 0;
@@ -3780,7 +3781,7 @@ facility
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-left: 5px solid #ed3237;
+	border-left: 5px solid #F68B34;
 }
 
 .breadcroumb-area h6 a {
@@ -3840,7 +3841,7 @@ facility
 }
 
 #price-page .single-price-item.active {
-	border-color: #ed3237;
+	border-color: #F68B34;
 	opacity: 1;
 }
 
@@ -3896,7 +3897,7 @@ facility
 }
 
 .cost-center .btn-1 .dark {
-	background: #ed3237;
+	background: #F68B34;
 }
 
 .quote-form .btn:hover {
@@ -3968,13 +3969,13 @@ facility
 }
 
 #blog-page .blog-content a:hover {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 #blog-page .blog-content a.read-more {
 	text-transform: uppercase;
 	font-size: 16px;
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .blog-search input {
@@ -4021,7 +4022,7 @@ facility
 
 .blog-category a.active,
 .archive a.active {
-	color: #ed3237;
+	color: #F68B34;
 }
 
 .recent-post h5 {
@@ -4079,11 +4080,11 @@ p.blog-date {
 }
 
 .popular-tag span.active {
-	background: #ed3237;
+	background: #F68B34;
 }
 
 .popular-tag span:hover {
-	background: #ed3237;
+	background: #F68B34;
 }
 
 .popular-tag span:hover a {
@@ -4217,12 +4218,12 @@ a.reply-btn {
 }
 
 .page-numbers.current {
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 }
 
 .pagination-block .page-numbers:hover {
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 }
 
@@ -4253,7 +4254,7 @@ a.reply-btn {
 }
 
 .service-list a.active {
-	background: #ed3237;
+	background: #F68B34;
 	color: #fff;
 }
 
@@ -4306,7 +4307,7 @@ a.reply-btn {
 }
 
 .blog-meta span i {
-	color: #ed3237;
+	color: #F68B34;
 	font-size: 20px;
 	margin-right: 10px;
 }
@@ -4351,7 +4352,7 @@ a.reply-btn {
 
 .contact-us-inner a {
 	text-transform: uppercase;
-	color: #ed3237;
+	color: #F68B34;
 	font-size: 17px;
 	font-weight: 500;
 	margin: 20px 0 10px;
@@ -4364,7 +4365,7 @@ a.reply-btn {
 
 #contact-us .info-i i:before {
 	font-size: 50px;
-	color: #ed3237;
+	color: #F68B34;
 }
 
 #contact-us .contact-form .main-btn {
@@ -4724,3 +4725,13 @@ a.reply-btn {
   
 
 
+
+  .serv-content ul {
+	padding-left: 18px;
+	margin-top: 8px;
+}
+
+.serv-content ul li {
+	font-size: 14px;
+	line-height: 1.6;
+}
