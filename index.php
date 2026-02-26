@@ -252,6 +252,8 @@
 					</div>
 
 					                <center><a href="faq.php" class="main-btn">Read More</a></center>
+									<br>
+									<br>
 
 				</div>
     </div>
