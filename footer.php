@@ -34,7 +34,9 @@
 								<div class="social-area">
 									<a href="#">
 										<i class="las la-map-marker-alt"></i> 
-										KM 19, PH/ABA Expressway, Iriebe, Port Harcourt, Oyigbo L.G.A, Rivers State, Nigeria
+										KM 19, PH/ABA Expressway, Iriebe,
+										Port Harcourt, Oyigbo L.G.A,
+										Rivers State, Nigeria.
 									</a>
 								</div>
 							</li>

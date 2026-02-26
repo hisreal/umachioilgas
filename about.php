@@ -110,7 +110,7 @@
 
 			<div class="col-lg-6 col-md-12">
 				<div class="feature-img wow fadeInUp" data-wow-delay=".6s">
-					<img src="assets/img/feature.jpg" alt="U-Machi Oil & Gas Operations">
+					<img src="assets/img/about-img.png" alt="U-Machi Oil & Gas Operations">
 				</div>
 			</div>
 

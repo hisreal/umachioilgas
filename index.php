@@ -363,7 +363,7 @@
  				<div class="offset-lg-2 col-lg-8 text-center">
  					<div class="section-title">
  						<h6>Our Facility</h6>
- 						<h2>We <b>care</b> About Your <br>Comfort</h2>
+ 						<h2>We <b>Care</b> About Your <br>Comfort</h2>
  					</div>
  				</div>
  			</div>
