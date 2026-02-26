@@ -427,7 +427,7 @@
 				<div class="row">
 					<div class="col-lg-12 text-center ">
 						<div class="section-title">
-							<h6>Clients Testimonial</h6>
+							<h6>Client Testimonials</h6>
 							<p>U-Machi Oil & Gas Ltd has been our trusted diesel supplier
 								 for over a year. <br>Their delivery is always on time, and their team operates
 								  with a high level of professionalism and safety awareness. <br>
