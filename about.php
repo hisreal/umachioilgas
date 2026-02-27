@@ -42,7 +42,7 @@
 				<div class="single-feature-item wow fadeInUp" data-wow-delay=".2s">
 					<div class="num"><i class="las la-bullseye"></i></div>
 					<div class="feature-content">
-						<h5>Our Mission</h5>
+						<h5 class="heading" >Our Mission</h5>
 						<p>
 							To deliver reliable, safe, and high-quality petroleum products 
 							that power industries, businesses, and communities.
@@ -54,7 +54,7 @@
 				<div class="single-feature-item wow fadeInUp" data-wow-delay=".4s">
 					<div class="num"><i class="las la-eye"></i></div>
 					<div class="feature-content">
-						<h5>Our Vision</h5>
+						<h5 class="heading" >Our Vision</h5>
 						<p>
 							To become a leading indigenous oil and gas company recognized 
 							for operational excellence, safety standards, and dependable 
@@ -65,7 +65,7 @@
 
 				<!-- Core Values Styled -->
 				<div class="wow fadeInUp mt-4" data-wow-delay=".6s">
-					<h5 class="mb-3">Our Core Values</h5>
+					<h5 class="mb-3 heading">Our Core Values</h5>
 
 					<div class="row">
 						<div class="col-6 mb-3">

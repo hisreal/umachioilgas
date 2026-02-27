@@ -2,7 +2,7 @@
 
 <!-- Hero Section -->
 <div class="homepage-slides owl-carousel">
-    <div class="single-slide-item" style="background-image: url('assets/img/umachi.png');">
+    <div class="single-slide-item" style="background-image: url('assets/img/slider/hero1.png');">
         <div class="overlay"></div>
         <div class="hero-area-content">
             <div class="container">
@@ -47,7 +47,7 @@
                         <img src="assets/img/icon/barrel.png" alt="Bulk Petroleum Supply">
                     </div>
 
-                    <h5 class="fw-bold text-center">Bulk Petroleum Supply</h5>
+                    <h5 class="fw-bold text-center heading">Bulk Petroleum Supply</h5>
 
                     <p>We supply premium-grade petroleum products in bulk quantities:</p>
 
@@ -76,7 +76,7 @@
                     <div class="service-icon mb-4">
                         <img src="assets/img/icon/fuel-station.png" alt="On-Demand Mobile Fuel Delivery">
                     </div>
-                    <h5 class="fw-bold">On-Demand Mobile Fuel Delivery</h5>
+                    <h5 class="fw-bold heading">On-Demand Mobile Fuel Delivery</h5>
                     <p>
                         Our mobile fueling units deliver diesel and petrol directly to your site,
                         safely, efficiently, and at competitive station prices.
@@ -91,7 +91,7 @@
                         <img src="assets/img/icon/oil-industry.png" alt="Fleet Fuel Management">
                     </div>
 
-                    <h5 class="fw-bold text-center">Fleet Fuel Management</h5>
+                    <h5 class="fw-bold text-center heading ">Fleet Fuel Management</h5>
 
                     <p>We offer structured fuel supply solutions for fleet operators, including:</p>
 
@@ -110,7 +110,7 @@
                     <div class="service-icon mb-4">
                         <img src="assets/img/icon/retail.png" alt="Retail & Depot Operations">
                     </div>
-                    <h5 class="fw-bold">Retail & Depot Operations</h5>
+                    <h5 class="fw-bold heading ">Retail & Depot Operations</h5>
                     <p>
                         Our strategically located facility in Port Harcourt supports efficient
                         storage, handling, and distribution of petroleum products.
