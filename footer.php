@@ -62,9 +62,10 @@
 								<a href="about.php">About</a>
 								<a href="services.php">Services</a>									
 								<a href="">About Us </a>
-								<a href=""> Mobile Fuel Services</a>
+								<a href="mobilefuel.php"> Mobile Fuel Services</a>
 								<a href=""> HSE</a>
 								<a href=""> Industries</a>
+								<a href=""> Faq</a>
 								<a href=""> Contact</a>
 							</li>
 						</ul>

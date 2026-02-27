@@ -125,7 +125,7 @@
  											</li>
 
 											<li class="nav-item">
- 												<a class="nav-link" href="#">Mobile Fuel Services</a>
+ 												<a class="nav-link" href="mobilefuel.php">Mobile Fuel Services</a>
  											</li>
 
 											<li class="nav-item">
@@ -134,6 +134,10 @@
 
 											<li class="nav-item">
  												<a class="nav-link" href="#">Industries</a>
+ 											</li>
+
+											<li class="nav-item">
+ 												<a class="nav-link" href="faq.php">Faq</a>
  											</li>
 
 											<li class="nav-item">

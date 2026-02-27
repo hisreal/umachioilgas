@@ -1,43 +1,74 @@
-<!-- Faq Section  -->
-    <div class="faq-section section-padding gray-bg">
-       <div class="row justify-content-center">
-      
-				<div class="section-title text-center">
-                            <h6>FAQ</h6>
-							<br>
-							<br>
+<?php require_once('header.php'); ?>
+<!-- Hero Section -->
+<div class="">
+    <div class="single-slide-item" style="background-image: url('assets/img/slider/hero1.png');">
+        <div class="overlay"></div>
+        <div class="hero-area-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <div class="section-title text-white">
+                            <h1>Frequently Asked<br> Questions</h1>
+                            <p>
+                                Find answers to common questions 
+                                about our services, delivery options, 
+                                safety standards, and operations.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                  <div class="col-lg-9 col-md-10 col-12">
-                    <div class="faq-content-wrap">
-                        
-                       <div class="cp-custom-accordion mt-20">
-			<div class="accordions" id="accordionExample">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Faq Section -->
+<div style="background:#ffffff" class="faq-section section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
 
-				<!-- 1 -->
-				<div class="accordion-items">
-					<h2 class="accordion-header" id="headingOne">
-						<button class="accordion-buttons" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							1. What types of fuel do you supply?
-						</button>
-					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show"
-						aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<p>We supply high-quality:</p>
-							<ul>
-								<li>Premium Motor Spirit (PMS / Petrol)</li>
-								<li>Automotive Gas Oil (AGO / Diesel)</li>
-								<li>Liquefied Petroleum Gas (LPG / Cooking Gas)</li>
-								<li>Compressed Natural Gas (CNG)</li>
-							</ul>
-							<p>All products meet industry quality standards.</p>
-						</div>
-					</div>
-				</div>
+            <div class="col-lg-8 col-md-8 col-12">
 
-				<!-- 2 -->
-				<div class="accordion-items">
+                <div class="section-title text-center">
+                    <h6>FAQ</h6>
+                    <br><br>
+                </div>
+
+                <div  class="faq-content-wrap p-4">
+
+                    <div class="cp-custom-accordion mt-20">
+                        <div class="accordions" id="accordionExample">
+
+                            <!-- FAQ ITEMS START -->
+
+                            <!-- 1 -->
+                            <div class="accordion-items">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-buttons" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        1. What types of fuel do you supply?
+                                    </button>
+                                </h2>
+
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>We supply high-quality:</p>
+                                        <ul>
+                                            <li>Premium Motor Spirit (PMS / Petrol)</li>
+                                            <li>Automotive Gas Oil (AGO / Diesel)</li>
+                                            <li>Liquefied Petroleum Gas (LPG / Cooking Gas)</li>
+                                            <li>Compressed Natural Gas (CNG)</li>
+                                        </ul>
+                                        <p>All products meet industry quality standards.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-items">
 					<h2 class="accordion-header" id="headingTwo">
 						<button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
 							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -225,5 +256,14 @@
     </div>
 </div>
 </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
+
+<?php require_once('footer.php'); ?>

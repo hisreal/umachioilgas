@@ -4560,6 +4560,7 @@ a.reply-btn {
   
   .faq-section-bg {
     max-width: calc(100% - 10px);
+	background-color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -4788,4 +4789,65 @@ a.reply-btn {
 
 .heading{
 	color: #ed3237;
+}
+
+
+/* Section Spacing */
+.section-padding{
+    padding: 90px 0;
+}
+
+/* Step Circle */
+.step-circle{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#ed3237,#df4146);
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto 18px;
+    box-shadow: 0 12px 25px rgba(209, 62, 62, 0.15);
+}
+
+/* Step Card */
+.step-card{
+    background: #fff;
+    border-radius: 18px;
+    transition: all .35s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.step-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Benefit Card */
+.benefit-card{
+    border-radius: 18px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: all .35s ease;
+    height: 100%;
+}
+
+.benefit-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.benefit-icon{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Who We Serve Card */
+.service-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
