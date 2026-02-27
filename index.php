@@ -29,114 +29,6 @@
  		</div>
  	</div>
 
- 	<!-- Services Area -->
-
- 	<div id="service-1" class="services-area gray-bg section-padding">
- 		<div class="container">
- 			<div class="row">
- 				<div class="offset-lg-2 col-lg-8 text-center">
- 					<div class="section-title">
- 						<h6>Who We Are</h6>
-						<p>U-Machi Oil & Gas Ltd is committed to delivering premium petroleum 
-							products with unmatched reliability. We serve businesses, institutions,
-							 fleet operators, estates, and construction companies with dependable 
-							 fuel supply solutions.</p>
-						 <a href="" class="main-btn">Know More</a>
-
-
- 					</div>
- 				</div>
- 			</div>
-				
-				<br>
-				<br>
-				<br>
-				<br>
-		
-				<br>
- 			<div class="row">
-			
-	<div style="margin-bottom: -20px" class="section-title text-center">
- 		<h6>What We Do</h6>
-	</div>
-
-	<!-- Bulk Petroleum Supply -->
-	<div class="col-lg-4 col-md-6 col-sm-12">
-		<div class="single-serv-item active wow fadeInLeft" data-wow-delay=".6s">
-			<div class="serv-icon">
-				<i class="flaticon-gas-station"></i>
-			</div>
-			<div class="serv-content">
-				<h5>Bulk Petroleum Supply</h5>
-				<p  style="color: white" >We supply premium-grade petroleum products in bulk quantities:</p>
-				<ul>
-					<li>Automotive Gas Oil (AGO / Diesel)</li>
-					<li>Premium Motor Spirit (PMS / Petrol)</li>
-					<li>Liquefied Petroleum Gas (LPG / Cooking Gas)</li>
-					<li>Compressed Natural Gas (CNG)</li>
-				</ul>
-			</div>
-			<a href="single-service.html" class="read-more">Read More</a>
-		</div>
-	</div>
-
-	<!-- On-Demand Mobile Fuel Delivery -->
-	<div class="col-lg-4 col-md-6 col-sm-12">
-		<div class="single-serv-item mt-30 wow fadeInLeft" data-wow-delay=".6s">
-			<div class="serv-icon">
-				<i class="flaticon-biofuel"></i>
-			</div>
-			<div class="serv-content">
-				<h5>On-Demand Mobile Fuel Delivery</h5>
-				<p>
-					Our mobile fueling units deliver diesel and petrol directly to your site 
-					safely, efficiently, and at competitive station prices.
-				</p>
-			</div>
-			<a href="single-service.html" class="read-more">Read More</a>
-		</div>
-	</div>
-
-	<!-- Fleet Fuel Management -->
-	<div class="col-lg-4 col-md-6 col-sm-12">
-		<div class="single-serv-item active mt-30 wow fadeInLeft" data-wow-delay=".6s">
-			<div class="serv-icon">
-				<i class="flaticon-fuel-station"></i>
-			</div>
-			<div class="serv-content">
-				<h5>Fleet Fuel Management</h5>
-				<p style="color: white" >We offer structured fuel supply solutions for fleet operators, including:</p>
-				<ul>
-					<li>Scheduled fuel deliveries</li>
-					<li>Consumption monitoring</li>
-					<li>Corporate billing systems</li>
-					<li>Dedicated supply coordination</li>
-				</ul>
-			</div>
-			<a href="single-service.html" class="read-more">Read More</a>
-		</div>
-	</div>
-
-	<!-- Retail & Depot Operations -->
-	<div class="col-lg-4 col-md-6 col-sm-12">
-		<div class="single-serv-item mt-30 wow fadeInLeft" data-wow-delay=".2s">
-			<div class="serv-icon">
-				<i class="flaticon-gas-1"></i>
-			</div>
-			<div class="serv-content">
-				<h5>Retail & Depot Operations</h5>
-				<p>
-					Our strategically located facility in Port Harcourt supports efficient 
-					storage, handling, and distribution of petroleum products.
-				</p>
-			</div>
-			<a href="single-service.html" class="read-more">Read More</a>
-		</div>
-	</div>
-
-</div>
- 		</div>
- 	</div>
 
  	<!-- Extra Service -->
 
@@ -178,6 +70,107 @@
  			</div>
  		</div>
  	</div>
+
+
+	<!-- SERVICES SECTION -->
+<section class="services-section py-5 bg-light">
+    <div class="container">
+
+    	<div class="row">
+ 				<div class="col-xl-12 col-lg-12 text-center">
+ 					<div class="section-title">
+ 						<h6>What we do</h6>
+						<br>
+						<br>
+ 					</div>
+ 				</div>
+ 			</div>
+
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card p-4 h-100 d-flex flex-column text-center">
+
+                    <div class="service-icon mb-4">
+                        <img src="assets/img/icon/barrel.png" alt="Bulk Petroleum Supply">
+                    </div>
+
+                    <h5 class="fw-bold">Bulk Petroleum Supply</h5>
+
+                    <p class="flex-grow-1 mt-3">
+                        We supply premium-grade petroleum products in bulk quantities...
+                    </p>
+
+                    <a href="services.php#1" class="btn btn-umachi w-100 mt-3">Read More</a>
+
+                </div>
+            </div>
+
+
+            <!-- Service 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card p-4 h-100 d-flex flex-column text-center">
+
+                    <div class="service-icon mb-4">
+                        <img src="assets/img/icon/fuel-station.png" alt="Mobile Fuel Delivery">
+                    </div>
+
+                    <h5 class="fw-bold">Mobile Fuel Delivery</h5>
+
+                    <p class="flex-grow-1">
+                        Our mobile fueling units deliver diesel and petrol directly to your site safely and efficiently.
+                    </p>
+
+                    <a href="services.php#2" class="btn btn-umachi w-100 mt-3">Read More</a>
+
+                </div>
+            </div>
+
+
+            <!-- Service 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card p-4 h-100 d-flex flex-column text-center">
+
+                    <div class="service-icon mb-4">
+                        <img src="assets/img/icon/oil-industry.png" alt="Fleet Fuel Management">
+                    </div>
+
+                    <h5 class="fw-bold">Fleet Fuel Management</h5>
+
+                    <p class="flex-grow-1">
+                        Structured fuel supply solutions for fleet operators including scheduled deliveries, monitoring, and billing...
+                    </p>
+
+                    <a href="services.php#3" class="btn btn-umachi w-100 mt-3">Read More</a>
+
+                </div>
+            </div>
+
+
+            <!-- Service 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card p-4 h-100 d-flex flex-column text-center">
+
+                    <div class="service-icon mb-4">
+                        <img src="assets/img/icon/retail.png" alt="Retail & Depot Operations">
+                    </div>
+
+                    <h5 class="fw-bold">Retail & Depot Operations</h5>
+
+                    <p class="flex-grow-1">
+                        Our strategically located facility supports safe storage and distribution of petroleum products.
+                    </p>
+
+                    <a href="services.php#4" class="btn btn-umachi w-100 mt-3">Read More</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 	<!-- Faq Section  -->
     <div class="faq-section section-padding gray-bg">

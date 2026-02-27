@@ -104,9 +104,9 @@
  							<div class="main-menu">
  								<nav class="navbar navbar-expand-lg">
  									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
- 										<span style="background:#ed3237" class="navbar-toggler-icon"></span>
- 										<span style="background:#ed3237" class="navbar-toggler-icon"></span>
- 										<span style="background:#ed3237" class="navbar-toggler-icon"></span>
+ 										<span style="background:#ff7b00" class="navbar-toggler-icon"></span>
+ 										<span style="background:#ff7b00" class="navbar-toggler-icon"></span>
+ 										<span style="background:#ff7b00" class="navbar-toggler-icon"></span>
  									</button>
 
  									<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">

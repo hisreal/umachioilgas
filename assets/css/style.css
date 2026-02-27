@@ -3391,7 +3391,7 @@ facility
 .choose-us-inner {
 	text-align: center;
 	padding: 50px 30px;
-	border-right: 1px solid #eee;
+	border: 1px solid #ded9d9;
 }
 
 .choose-us-inner h5 {
@@ -3407,27 +3407,8 @@ facility
 	z-index: 1;
 }
 
-.choose-us-icon:after {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 50px;
-	width: 80px;
-	height: 80px;
-	background: #f6f6f6;
-	border-radius: 50%;
-	z-index: -1;
-	transition: .3s;
-}
 
-.choose-us-inner:hover .choose-us-icon:after {
-	width: 100px;
-	height: 100px;
-	top: -18px;
-	left: 65px;
-	background: #F68B34;
-	opacity: .2;
-}
+
 
 /* Spacer
 ============== */
@@ -3438,8 +3419,8 @@ facility
 
 .spacer-bg {
 	/*	background-image: url(../img/divider.jpg);*/
-	background-attachment: fixed;
-	height: 300px;
+	
+	height: 1000px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4744,4 +4725,63 @@ a.reply-btn {
 .serv-content ul li {
 	font-size: 14px;
 	line-height: 1.6;
+	
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.1);
+}
+
+.service-icon img {
+    width: 60px;
+}
+
+.icon-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.icon-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+	color: #898a9c;
+	font-size: 15px;
+}
+
+.icon-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff7b00;
+    font-weight: bold;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card .flex-grow-1 {
+    flex-grow: 1;
+}
+
+.service-card .btn {
+    margin-top: auto;
+}
+
+.btn-umachi{
+	background: #ff7b00;
+	color: white;
 }
