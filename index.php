@@ -12,7 +12,7 @@
 
 						<p>We ensure safe, timely, and efficient energy delivery because your operations depend on it.
 						</p>
- 						<a href="index.php#quotes" class="main-btn">Request a Quote</a>
+ 						<a href="contact.php#quotes" class="main-btn">Request a Quote</a>
  					</div>
  				</div>
 
