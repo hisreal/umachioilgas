@@ -42,6 +42,7 @@
 						<p>U-Machi Oil & Gas Ltd is committed to delivering premium petroleum products with 
 							unmatched reliability. We serve businesses, institutions, fleet operators, 
 							estates, and construction companies with dependable fuel supply solutions.</p>
+							<a href="about.php" class="main-btn">Know More</a>
  					</div>
  				</div>
  			</div>
@@ -51,7 +52,7 @@
 
 
 	<!-- SERVICES SECTION -->
-<section class="services-section py-5 bg-light">
+<section class="services-section bg-light">
     <div class="container">
 
     	<div class="row">
