@@ -13,6 +13,7 @@
 
  	<!-- Bootstrap CSS -->
  	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
  	<!-- Font Awesome CSS-->
  	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
  	<!-- Line Awesome CSS -->
@@ -129,11 +130,11 @@
  											</li>
 
 											<li class="nav-item">
- 												<a class="nav-link" href="#">HSE</a>
+ 												<a class="nav-link" href="hse.php">HSE</a>
  											</li>
 
 											<li class="nav-item">
- 												<a class="nav-link" href="#">Industries</a>
+ 												<a class="nav-link" href="industries.php">Industries</a>
  											</li>
 
 											<li class="nav-item">
@@ -141,7 +142,7 @@
  											</li>
 
 											<li class="nav-item">
- 												<a class="nav-link" href="#">Contact</a>
+ 												<a class="nav-link" href="contact.php">Contact</a>
  											</li>
  										</ul>
 

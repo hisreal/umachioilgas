@@ -61,12 +61,12 @@
 								<a href="index.php">Home</a>
 								<a href="about.php">About</a>
 								<a href="services.php">Services</a>									
-								<a href="">About Us </a>
+								<a href="about.php">About Us </a>
 								<a href="mobilefuel.php"> Mobile Fuel Services</a>
-								<a href=""> HSE</a>
-								<a href=""> Industries</a>
-								<a href=""> Faq</a>
-								<a href=""> Contact</a>
+								<a href="hse.php"> HSE</a>
+								<a href="industries"> Industries</a>
+								<a href="faq.php"> Faq</a>
+								<a href="contact.php"> Contact</a>
 							</li>
 						</ul>
 					</div>

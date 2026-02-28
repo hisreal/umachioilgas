@@ -4851,3 +4851,180 @@ a.reply-btn {
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
+
+/* HERO SECTION */
+.page-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url('assets/img/hse-bg.jpg') center/cover no-repeat;
+}
+
+/* FEATURE LIST */
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.feature-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff7b00;
+    font-weight: bold;
+}
+
+/* GOAL CARD */
+.goal-card {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+
+/* CONTENT */
+.hse-content {
+    background: #f9fafc;
+}
+
+/* GRID STYLE */
+.hse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.hse-item {
+    background: #ffffff;
+    padding: 20px;
+    border-left: 4px solid #ff7b00;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s ease;
+}
+
+.hse-item i {
+    font-size: 22px;
+    color: #ff7b00;
+}
+
+.hse-item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* GOAL */
+.hse-goal {
+    background: #0d1b2a;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+/* SPLIT SECTION */
+.hse-split-section {
+    width: 100%;
+}
+
+/* LEFT IMAGE SIDE */
+.hse-image {
+    position: relative;
+    background: url('assets/img/about-img.png') center/cover no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.hse-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(10,20,30,0.85), rgba(10,20,30,0.85));
+}
+
+.hse-image-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+}
+
+/* RIGHT CONTENT SIDE */
+.hse-content-wrapper {
+    padding: 80px 60px;
+}
+
+/* GRID */
+.hse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.hse-item {
+    background: #f8f9fa;
+    padding: 18px;
+    border-left: 4px solid #ff7b00;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s ease;
+}
+
+.hse-item i {
+    font-size: 22px;
+    color: #ff7b00;
+}
+
+.hse-item:hover {
+    transform: translateX(5px);
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* GOAL BOX */
+.hse-goal-box {
+    background: #ed3237;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.benefit-icon i {
+    font-size: 50px;
+    color: #ff7b00; /* Your brand oil & gas orange */
+}
+
+/* Contact Section styling */
+.contact-section .card { border-radius: 12px; }
+.icon-circle {
+  width: 56px; height:56px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:#fff3e6; box-shadow: 0 6px 18px rgba(13,27,42,0.04);
+}
+.icon-circle i { font-size:22px; color:#ff7b00; }
+
+.bg-soft { background:#fff3e6; border-radius:50%; width:56px; height:56px; display:flex; align-items:center; justify-content:center; }
+
+.section-padding { padding:60px 0; }
+
+/* Map rounded corners */
+.ratio iframe { border-radius:8px; }
+
+/* Form validation feedback */
+.was-validated .form-control:invalid, .form-control.is-invalid { border-color:#dc3545; }
+
+/* Slight card hover */
+.card:hover { transform: translateY(-4px); transition: 0.25s ease; }
+
+/* Responsive tweak */
+@media (max-width: 991px) {
+  .hse-image { min-height: 300px; padding: 30px; }
+  .contact-section .card-body { padding: 18px; }
+}

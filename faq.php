@@ -1,17 +1,17 @@
 <?php require_once('header.php'); ?>
 <!-- Hero Section -->
 <div class="">
-    <div class="single-slide-item" style="background-image: url('assets/img/slider/hero1.png');">
+    <div class="single-slide-item" style="background-image: url('assets/img/faq.png');">
         <div class="overlay"></div>
         <div class="hero-area-content">
             <div class="container">
                 <div class="row justify-content-center text-center">
-                    <div class="col-lg-10">
+                    <div class="col-lg-12">
                         <div class="section-title text-white">
-                            <h1>Frequently Asked<br> Questions</h1>
+                            <h1>Frequently <br> Asked Questions</h1>
                             <p>
                                 Find answers to common questions 
-                                about our services, delivery options, 
+                                about our services,delivery options, 
                                 safety standards, and operations.
                             </p>
                         </div>
