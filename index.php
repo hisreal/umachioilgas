@@ -12,7 +12,7 @@
 
 						<p>We ensure safe, timely, and efficient energy delivery because your operations depend on it.
 						</p>
- 						<a href="about.php" class="main-btn">Request a Quote</a>
+ 						<a href="index.php#quotes" class="main-btn">Request a Quote</a>
  					</div>
  				</div>
 
@@ -28,6 +28,27 @@
  			</div>
  		</div>
  	</div>
+
+		<!-- SERVICES SECTION -->
+<section class="services-section py-5 bg-light">
+    <div class="container">
+
+    	<div class="row justify-content-center g-4">
+ 				<div class="col-xl-8 col-lg-12 text-center">
+ 					<div class="section-title">
+ 						<h6>Who we are</h6>
+						<br>
+						<br>
+						<p>U-Machi Oil & Gas Ltd is committed to delivering premium petroleum products with 
+							unmatched reliability. We serve businesses, institutions, fleet operators, 
+							estates, and construction companies with dependable fuel supply solutions.</p>
+ 					</div>
+ 				</div>
+ 			</div>
+		</div>
+	</section>
+
+
 
 	<!-- SERVICES SECTION -->
 <section class="services-section py-5 bg-light">
@@ -317,7 +338,7 @@
 					</div>
 					<div class="author-desc">
 						<h5 class="heading">Facility Manager</h5>
-						<span>Manufacturing Company – Port Harcourt</span>
+						<span>Manufacturing Company - Port Harcourt</span>
 					</div>
 				</div>
 			</div>
@@ -413,7 +434,7 @@
             </div>
 
             <div class="col-lg-4 col-md-12 col-12 text-lg-end text-md-start text-start">
-                <a href="" class="main-btn">Get Started Today</a>
+                <a href="contact.php" class="main-btn">Get Started Today</a>
             </div>
 
         </div>

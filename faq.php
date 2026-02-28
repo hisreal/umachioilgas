@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 <!-- Hero Section -->
 <div class="">
-    <div class="single-slide-item" style="background-image: url('assets/img/faq.png');">
+    <div class="single-slide-item" style="background-image: url('assets/img/faq.jpg');">
         <div class="overlay"></div>
         <div class="hero-area-content">
             <div class="container">

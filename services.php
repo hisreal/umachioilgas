@@ -1,13 +1,13 @@
 <?php require_once("header.php"); ?>
 
 <!-- Hero Section -->
-<div class="homepage-slides owl-carousel">
+<div class="">
     <div class="single-slide-item" style="background-image: url('assets/img/slider/hero1.png');">
         <div class="overlay"></div>
         <div class="hero-area-content">
             <div class="container">
                 <div class="row justify-content-center text-center">
-                    <div class="col-lg-10 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-10">
                         <div class="section-title text-white">
                             <h1>Our Services Energy</h1>
                             <p>
