@@ -295,7 +295,7 @@
 					</div>
 					<div class="author-desc">
 						<h5 class="heading" >Operations Manager</h5>
-						<span>Construction Firm – Port Harcourt</span>
+						<span>Construction Firm - Port Harcourt</span>
 					</div>
 				</div>
 			</div>
