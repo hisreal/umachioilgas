@@ -153,6 +153,37 @@ $(document).ready(function(){
 });
 
 </script>
+
+<script>
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(e) {
+        e.preventDefault(); // prevent page refresh
+        let form = $(this);
+        let alertBox = $('#alertMessage');
+        alertBox.html(''); // clear previous alerts
+
+        $.ajax({
+            url: 'includes/send_email.php', // path to PHP file
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'json',
+            success: function(response) {
+                if(response.status === 'success') {
+                    alertBox.html('<div class="alert alert-success">' + response.message + '</div>');
+                    form[0].reset(); // reset form
+                } else {
+                    alertBox.html('<div class="alert alert-danger">' + response.message + '</div>');
+                }
+            },
+            error: function() {
+                alertBox.html('<div class="alert alert-danger">An unexpected error occurred. Please try again.</div>');
+            }
+        });
+    });
+});
+</script>
+
+
  </body>
 
  

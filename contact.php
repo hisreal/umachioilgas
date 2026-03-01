@@ -107,11 +107,11 @@
                   <label for="product" class="form-label">Product Required</label>
                   <select id="product" name="product" class="form-select" required>
                     <option value="">Choose...</option>
-                    <option>Automotive Gas Oil (AGO)</option>
-                    <option>Premium Motor Spirit (PMS)</option>
-                    <option>Liquefied Petroleum Gas (LPG)</option>
+                     <option>Premium Motor Spirit (PMS) - Petrol</option>
+                    <option>Automotive Gas Oil (AGO) Diesel</option>
+                    <option>LPG Cooking Gas (LPG)</option>
                     <option>Compressed Natural Gas (CNG)</option>
-                    <option>Marine Gas Oil (MGO)</option>
+                    
                   </select>
                   <div class="invalid-feedback">Please choose a product.</div>
                 </div>

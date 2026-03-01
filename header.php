@@ -28,7 +28,8 @@
  	<link href="assets/css/flaticon.css" rel="stylesheet">
  	<!-- Owl Carousel CSS -->
  	<link href="assets/css/owl.carousel.css" rel="stylesheet">
-	
+	<!-- jQuery CDN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
