@@ -78,7 +78,7 @@
           <div id="quotes" class="card-body p-4">
             <h5 class="fw-bold mb-3">Request a Quote</h5>
 
-            <form id="quoteForm" action="contact_process.php" method="post" novalidate>
+            <form id="contact-form" method="post" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
                   <label for="fullName" class="form-label">Full Name</label>
@@ -137,6 +137,11 @@
                   <div class="d-grid">
                     <button type="submit" class="btn btn-warning btn-lg">Request Quote</button>
                   </div>
+                </div>
+
+                <!-- Alert Message Here -->
+                <div class="col-12">
+                  <div id="alertMessage"></div>
                 </div>
 
               </div>

@@ -32,8 +32,8 @@
 						<ul>
 							<li>
 								<div class="social-area">
-									<a href="#">
-										<i class="las la-map-marker-alt"></i> 
+									<a href="https://www.google.com/maps/search/?api=1&query=KM+19+PH%2FABA+Expressway+Iriebe+Port+Harcourt+Oyigbo+Rivers+State+Nigeria" target="_blank">
+    <i class="las la-map-marker-alt"></i> 
 										KM 19, PH/ABA Expressway, Iriebe,
 										Port Harcourt, Oyigbo L.G.A,
 										Rivers State, Nigeria.
@@ -45,7 +45,7 @@
 						<ul>
 							<li>
 								<div class="social-area">
-									<a href="#"><i class="las la-envelope"></i> info@Umachioilgas.com</a>
+									<a href="mailto: info@Umachioilgas.com"><i class="las la-envelope"></i> info@Umachioilgas.com</a>
 								</div>
 							</li>
 						</ul>
