@@ -6,14 +6,18 @@
 					<h2 class="text-white">Subscribe newsletter <br> For Any Update</h2>
 				</div>
 				<div class="subscribed-form d-flex">
-					<form action="#">
-						<input type="email" placeholder="Enter Your Mail">
-						<input type="submit" value="Subscribe Now">
+					<form id="newsletter-form">
+						<input type="email" placeholder="Enter Your Mail" required>
+						 <button style="background: black" type="submit">Subscribe Now</button>
 					</form>
+					<div id="newsletterAlert" class="mt-3"></div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+<!-- Alert Message -->
 
 	<!-- Footer Area -->
 
@@ -199,6 +203,29 @@ $(document).ready(function() {
 submitBtn.html('<span class="spinner-border spinner-border-sm"></span> Sending...');
 </script>
 
+<script>
+$('#newsletter-form').on('submit', function(e){
+    e.preventDefault();
+
+    let alertBox = $('#newsletterAlert');
+    alertBox.html('');
+
+    $.ajax({
+        url: 'subscribe.php',
+        type: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function(response){
+            if(response.status === 'success'){
+                alertBox.html('<div class="alert alert-success">'+response.message+'</div>');
+                $('#newsletter-form')[0].reset();
+            } else {
+                alertBox.html('<div class="alert alert-danger">'+response.message+'</div>');
+            }
+        }
+    });
+});
+</script>
 
  </body>
 
