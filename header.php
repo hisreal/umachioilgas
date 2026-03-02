@@ -36,8 +36,9 @@
 <!-- Owl Carousel JS -->
 	<script src="assets/js/owl.carousel.min.js"></script>
 
-
- 	<!-- Style CSS -->
+<!-- Preload First Hero Image -->
+<link rel="preload" as="image" href="assets/img/slider/hero2-69a57feb1e5f0.webp">
+<link rel="preload" as="image" href="assets/img/slider/hero1-69a57fb60f145.webp"> 	<!-- Style CSS -->
  	<link rel="stylesheet"  href="assets/css/style.css?v=<?php echo filemtime('assets/css/style.css');?>" >
  	<!-- Responsive CSS -->
  	<link rel="stylesheet" href="assets/css/responsive.css?v=<?php echo filemtime('assets/css/responsive.css');?>" >
