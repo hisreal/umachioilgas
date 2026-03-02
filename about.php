@@ -1,7 +1,7 @@
 
 <?php require_once("header.php"); ?>
 <div class="">
- 		<div style="background-image: url('assets/img/about-img.png');" class="single-slide-item">
+ 		<div style="background-image: url('assets/img/umachi-img.png');" class="single-slide-item">
  			<div class="overlay"></div>
  			<div class="hero-area-content">
  				<div class="container">
