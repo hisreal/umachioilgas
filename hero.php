@@ -1,4 +1,4 @@
-<div style="background-color: #F68B34; " class="homepage-slides owl-carousel">
+<div  class="homepage-slides owl-carousel">
  		<div style="background-image: url('assets/img/slider/hero2-69a57feb1e5f0.webp'); background-color: #F68B34;" class="single-slide-item">
  			<div class="overlay"></div>
  			<div class="hero-area-content">
