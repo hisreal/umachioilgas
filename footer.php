@@ -149,25 +149,7 @@
 <!-- Owl Carousel JS SECOND -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-	<script>
-$(document).ready(function(){
-
-    $(".homepage-slides").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 5000, // 5 seconds
-        autoplayHoverPause: true,
-        nav: false,
-        dots: true,
-        animateOut: 'fadeOut',
-		autoHeight: true,
-        smartSpeed: 1000
-    });
-
-});
-
-</script>
+	
 
 <script>
 $(document).ready(function() {
