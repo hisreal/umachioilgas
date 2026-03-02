@@ -1,8 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$apiKey = '91fd7e9beed6d3111b4b68476e3f822f-us12';
-$listId = 'f91f51a357';
+
 $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
 
 $email = trim($_POST['email'] ?? '');
