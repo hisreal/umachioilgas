@@ -133,11 +133,18 @@
                   <textarea id="message" name="message" rows="4" class="form-control" placeholder="Any additional information"></textarea>
                 </div>
 
+                 <!-- Alert Message Here -->
                 <div class="col-12">
-                  <div class="d-grid">
-                    <button type="submit" class="btn btn-warning btn-lg">Request Quote</button>
-                  </div>
+                  <div id="alertMessage"></div>
                 </div>
+
+             <div class="col-12">
+                <div class="d-grid">
+                  <button type="submit" id="submitBtn" class="btn btn-warning btn-lg">
+                    Request Quote
+                  </button>
+                </div>
+              </div>
 
                 <!-- Alert Message Here -->
                 <div class="col-12">
