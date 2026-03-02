@@ -1,12 +1,12 @@
 
 <?php require_once("header.php"); ?>
-<div class="homepage-slides owl-carousel">
+<div class="">
  		<div style="background-image: url('assets/img/umachi.png');" class="single-slide-item">
  			<div class="overlay"></div>
  			<div class="hero-area-content">
  				<div class="container">
  					<div class="row justify-content-center">
- 						<div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
+ 						<div class="col-lg-12">
  							<div class="section-title">
  								
 								<h1 style="top: 0px">About U-Machi <br>Oil & Gas Ltd.</h1> 								
