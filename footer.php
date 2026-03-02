@@ -1,20 +1,31 @@
 	<!-- Newsletter Section  -->
 	<div class="newsletter-section">
-		<div class="container">
-			<div class="newsletter-content d-flex align-items-center justify-content-between">
-				<div class="section-title">
-					<h2 class="text-white">Subscribe newsletter <br> For Any Update</h2>
+			<div class="container">
+				<div class="newsletter-content d-flex align-items-center justify-content-between">
+
+					<div class="section-title">
+						<h2 class="text-white">
+							Subscribe newsletter <br> For Any Update
+						</h2>
+					</div>
+
+					<div class="subscribed-form">
+							<!-- Alert Message BELOW Input + Button -->
+							<div id="newsletterAlert"></div>
+						<form id="newsletter-form" method="POST">
+
+							<input type="email" name="email" placeholder="Enter Your Mail" required>
+
+							<button style="background:black" type="submit">
+								Subscribe Now
+							</button>
+
+						</form>
+					</div>
+
 				</div>
-				<div class="subscribed-form d-flex">
-					<form id="newsletter-form" method="POST">
-						<input type="email" name="email" placeholder="Enter Your Mail" required>
-						 <button style="background: black" type="submit">Subscribe Now</button>
-					</form>
-				</div>
-				<div id="newsletterAlert" class="mt-3"></div>
 			</div>
 		</div>
-	</div>
 
 
 <!-- Alert Message -->
