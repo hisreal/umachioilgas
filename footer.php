@@ -6,8 +6,8 @@
 					<h2 class="text-white">Subscribe newsletter <br> For Any Update</h2>
 				</div>
 				<div class="subscribed-form d-flex">
-					<form id="newsletter-form">
-						<input type="email" placeholder="Enter Your Mail" required>
+					<form id="newsletter-form" method="POST">
+						<input type="email" name="email" placeholder="Enter Your Mail" required>
 						 <button style="background: black" type="submit">Subscribe Now</button>
 					</form>
 					<div id="newsletterAlert" class="mt-3"></div>
