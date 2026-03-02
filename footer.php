@@ -76,7 +76,7 @@
 							<li>
 								<div class="social-area">
 									<a href="#"><i class="lab la-facebook-f"></i>Facebook</a>
-									<a href="#"><i class="lab la-instagram"></i>Instagram</a>
+									<a href="https://www.instagram.com/umachioilandgas?igsh=MWVpcmJnaHF6ZzdyNg==" target="_blank"><i class="lab la-instagram"></i>Instagram</a>
 								
 								</div>
 							</li>
