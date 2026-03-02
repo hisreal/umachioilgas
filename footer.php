@@ -10,8 +10,8 @@
 						<input type="email" name="email" placeholder="Enter Your Mail" required>
 						 <button style="background: black" type="submit">Subscribe Now</button>
 					</form>
-					<div id="newsletterAlert" class="mt-3"></div>
 				</div>
+				<div id="newsletterAlert" class="mt-3"></div>
 			</div>
 		</div>
 	</div>
@@ -204,26 +204,69 @@ submitBtn.html('<span class="spinner-border spinner-border-sm"></span> Sending..
 </script>
 
 <script>
-$('#newsletter-form').on('submit', function(e){
-    e.preventDefault();
+$(document).ready(function(){
 
-    let alertBox = $('#newsletterAlert');
-    alertBox.html('');
+    $('#newsletter-form').on('submit', function(e){
+        e.preventDefault();
 
-    $.ajax({
-        url: 'subscribe.php',
-        type: 'POST',
-        data: $(this).serialize(),
-        dataType: 'json',
-        success: function(response){
-            if(response.status === 'success'){
-                alertBox.html('<div class="alert alert-success">'+response.message+'</div>');
-                $('#newsletter-form')[0].reset();
-            } else {
-                alertBox.html('<div class="alert alert-danger">'+response.message+'</div>');
+        let form = $(this);
+        let alertBox = $('#newsletterAlert');
+        let submitBtn = form.find('button[type="submit"]');
+
+        // Prevent multiple rapid clicks
+        if(submitBtn.prop('disabled')) return;
+
+        alertBox.html('');
+
+        // Disable button + show spinner
+        submitBtn.prop('disabled', true).html(`
+            <span class="spinner-border spinner-border-sm"></span>
+            Subscribing...
+        `);
+
+        $.ajax({
+            url: 'subscribe.php',
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'json',
+
+            success: function(response){
+
+                if(response.status === 'success'){
+                    alertBox.html(`
+                        <div class="alert alert-success">
+                            ${response.message}
+                        </div>
+                    `);
+
+                    form[0].reset();
+
+                } else {
+                    alertBox.html(`
+                        <div class="alert alert-danger">
+                            ${response.message}
+                        </div>
+                    `);
+                }
+            },
+
+            error: function(){
+                alertBox.html(`
+                    <div class="alert alert-danger">
+                        Server error. Please try again.
+                    </div>
+                `);
+            },
+
+            complete: function(){
+                // Re-enable button after request completes
+                submitBtn.prop('disabled', false).html('Subscribe Now');
             }
-        }
+
+        });
+
     });
+
 });
 </script>
 
