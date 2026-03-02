@@ -2,7 +2,7 @@
 
 <!-- Hero Section -->
 <div class="">
-    <div class="single-slide-item" style="background-image: url('assets/img/slider/hero1.png');">
+    <div class="single-slide-item" style="background-image: url('assets/img/slider/hero2-69a57feb1e5f0.webp');">
         <div class="overlay"></div>
         <div class="hero-area-content">
             <div class="container">
