@@ -327,8 +327,7 @@
 				<div class="testimonial-icon"><i class="las la-quote-left"></i></div>
 				<p>
 			
-					“U-Machi Oil & Gas Ltd has been our trusted diesel supplier
-								 for over a year. Their delivery is always on time, and their team operates
+					“U-Machi Oil & Gas Ltd has been our trusted diesel supplier. Their delivery is always on time, and their team operates
 								  with a high level of professionalism and safety awareness. 
 								  We highly recommend their services.”
 			
@@ -397,9 +396,9 @@
  				<div class="col-lg-4 col-md-6 col-sm-12">
  					<div class="single-facility-area wow fadeInLeft" data-wow-delay=".4s">
  						<div class="facility-icon">
- 							<img style="width: 100px"  src="assets/img/icon/dinner.png" alt="">
+ 							<img style="width: 100px"  src="assets/img/icon/haircut.png" alt="">
  						</div>
- 						<h4>Restaurant</h4>
+ 						<h4>Hair Cut Studio</h4>
 
  					</div>
  				</div>
