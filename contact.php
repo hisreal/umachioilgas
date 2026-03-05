@@ -1,4 +1,8 @@
-<?php require_once('header.php'); ?>
+<?php
+$title = "Contact Us | U-Machi Oil & Gas Ltd";
+$page = "contact";
+require_once('header.php');
+ ?>
 
 <section class="contact-section section-padding bg-dark" aria-label="Contact">
   <div class="container">

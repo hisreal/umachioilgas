@@ -1,4 +1,7 @@
-<?php require_once('header.php'); ?>
+<?php
+$title = "Industries We Serve | U-Machi Oil & Gas Ltd";
+$page = "industries";
+ require_once('header.php'); ?>
 <div class="">
  		<div style="background-image: url('assets/img/industries.png');" class="single-slide-item">
  			<div class="overlay"></div>

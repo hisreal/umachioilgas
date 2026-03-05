@@ -1,4 +1,7 @@
-<?php require_once('header.php'); ?>
+<?php
+$title = "Mobile Fuel Services | U-Machi Oil & Gas Ltd";
+$page = "mobilefuel";
+require_once('header.php'); ?>
 <div class="">
  		<div style="background-image: url('assets/img/mobilefuel.png');" class="single-slide-item">
  			<div class="overlay"></div>

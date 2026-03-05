@@ -1,4 +1,7 @@
-<?php require_once("header.php"); ?>
+<?php
+$title = "Our Services | U-Machi Oil & Gas Ltd";
+$page = "services";
+require_once("header.php"); ?>
 
 <!-- Hero Section -->
 <div class="">

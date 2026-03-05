@@ -1,5 +1,9 @@
-<?php require_once("header.php"); ?>
-<?php require_once("hero.php"); ?>
+
+<?php
+$title = "Home | U-Machi Oil & Gas Ltd";
+$page = "home";
+require_once('header.php');
+require_once("hero.php"); ?>
 <!-- About Section-->
  	<div class="about-area section-padding pt-120">
  		<div class="container">

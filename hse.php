@@ -1,4 +1,7 @@
-<?php require_once('header.php'); ?>
+<?php
+$title = "Health Safety & Environment | U-Machi Oil & Gas Ltd";
+$page = "hse";
+require_once('header.php'); ?>
 <div class="">
  		<div style="background-image: url('assets/img/hse.png');" class="single-slide-item">
  			<div class="overlay"></div>
