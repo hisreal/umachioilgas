@@ -132,13 +132,13 @@ $page = "faq";
                 aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <ul>
-                        <li>Manufacturing companies</li><br>
-                        <li>Construction firms</li><br>
-                        <li>Corporate offices</li><br>
-                        <li>Residential estates</li><br>
-                        <li>Fleet operators</li><br>
-                        <li>Event organizers</li><br>
-                        <li>Government institutions</li>br>
+                        <li>Manufacturing companies</li>,
+                        <li>Construction firms</li>,
+                        <li>Corporate offices</li>,
+                        <li>Residential estates</li>,
+                        <li>Fleet operators</li>,
+                        <li>Event organizers</li>,
+                        <li>Government institutions</li>
                     </ul>
                 </div>
             </div>
