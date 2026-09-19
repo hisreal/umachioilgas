@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: application/json');
 
-
+$apiKey = 'f7a1ca2ad15da408faa7351ad1e0ac3f-us12';
+$listId = 'f91f51a357';
 $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
 
 $email = trim($_POST['email'] ?? '');
@@ -30,9 +31,27 @@ $result = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-if ($httpCode == 200) {
-    echo json_encode(['status'=>'success','message'=>'Successfully subscribed!']);
+$response = json_decode($result, true);
+
+if ($httpCode == 200 || $httpCode == 201) {
+    echo json_encode([
+        'status'=>'success',
+        'message'=>'Successfully subscribed!'
+    ]);
+    exit;
+
+} elseif (isset($response['title']) && $response['title'] == 'Member Exists') {
+    echo json_encode([
+        'status'=>'error',
+        'message'=>'This email is already subscribed.'
+    ]);
+    exit;
+
 } else {
-    echo json_encode(['status'=>'error','message'=>'You are already subscribed or an error occurred.']);
+    echo json_encode([
+        'status'=>'error',
+        'message'=> $response['detail'] ?? 'Something went wrong. Please try again.'
+    ]);
+    exit;
 }
 ?>

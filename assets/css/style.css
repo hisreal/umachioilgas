@@ -1135,7 +1135,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .main-menu li.nav-item {
 	position: relative;
-	margin-right: 45px;
+	margin-right: 20px;
 }
 
 #header-2 .main-menu li.nav-item {
@@ -1146,12 +1146,44 @@ textarea:focus::-webkit-input-placeholder {
 	margin-right: 0;
 }
 
+.main-menu .navbar-nav .nav-cta-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 6px;
+}
+
+.nav-cta-btn {
+	display: inline-block;
+	background: -webkit-linear-gradient(90deg, #F68B34 0%, #ff5722 100%);
+	background: linear-gradient(90deg, #F68B34 0%, #ff5722 100%);
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	white-space: nowrap;
+	padding: 10px 16px;
+	border-radius: 50px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.nav-cta-btn:hover,
+.nav-cta-btn:focus {
+	background: -webkit-linear-gradient(90deg, #ff5722 0%, #F68B34 100%);
+	background: linear-gradient(90deg, #ff5722 0%, #F68B34 100%);
+	color: #fff;
+}
+
 .main-menu .navbar-nav .nav-link {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #d7d7d7;
 	display: block;
 	padding: 35px 0;
+	white-space: nowrap;
 }
 
 

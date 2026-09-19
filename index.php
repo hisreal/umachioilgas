@@ -409,9 +409,9 @@ require_once("hero.php"); ?>
  				<div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".6s">
  					<div class="single-facility-area">
  						<div class="facility-icon">
- 							<img style="width: 100px" src="assets/img/icon/car.png" alt="">
+ 							<img style="width: 100px" src="assets/img/icon/lubricant.png" alt="">
  						</div>
- 						<h4>Car Wash</h4>
+ 						<h4>Lubricant Store</h4>
 
  					</div>
  				</div>

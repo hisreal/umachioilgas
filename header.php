@@ -145,7 +145,7 @@ alt="U-Machi Oil and Gas Limited Nigeria Petroleum Supply Company">
 
 <div class="main-menu">
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
 
 <button class="navbar-toggler"
 type="button"
@@ -195,6 +195,14 @@ aria-label="Toggle navigation">
 
     <li class="nav-item">
         <a class="nav-link <?php if($page=='contact') echo 'active'; ?>" href="contact.php">Contact</a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" alt="_blank" href="https://portal.umachioilgas.com/index.php?route=auth%2Flogin">Staff Portal</a>
+    </li>
+
+    <li class="nav-item nav-cta-item">
+        <a class="nav-cta-btn" href="assets/docs/company-profile.pdf" target="_blank" rel="noopener">Company Profile</a>
     </li>
 
 </ul>

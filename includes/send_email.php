@@ -37,15 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->SMTPAuth = true;
-        $mail->Host = "2.qservers.net";
+        $mail->Host = "mail.umachioilgas.com";       
         $mail->Port = 465;
         $mail->SMTPSecure = 'ssl';
         $mail->Username = "quotes@umachioilgas.com";
-        $mail->Password = "9v6w=i^]7^4hIyLp";
+        $mail->Password = "Hisrealite@1";
 
         // IMPORTANT: setFrom should be your domain email (not user's email)
-        $mail->setFrom("info@umachioilgas.com", "Website Quote Request");
-        $mail->addAddress("info@umachioilgas.com");
+        $mail->setFrom("quotes@umachioilgas.com", "Website Quote Request");
+        $mail->addAddress("quotes@umachioilgas.com");
         $mail->addReplyTo($email, $full_name);
 
         $mail->isHTML(true);
