@@ -71,8 +71,6 @@ require_once("hero.php"); ?>
                 </div>
             </div>
 
-        </div>
-
             <!-- Service 2 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card p-4 h-100 d-flex flex-column text-center">
@@ -110,6 +108,8 @@ require_once("hero.php"); ?>
 
                 </div>
             </div>
+
+        </div>
     </div>
 </section>
 
