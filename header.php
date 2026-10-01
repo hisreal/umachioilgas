@@ -111,7 +111,7 @@
  "name": "U-Machi Oil & Gas Ltd",
  "image": "https://www.umachioilgas.com/assets/img/logo2.png",
  "url": "https://www.umachioilgas.com",
- "telephone": "+2349000000000",
+<?php /* "telephone": "+2349000000000", (hidden until the real number is ready) */ ?>
  "address": {
    "@type": "PostalAddress",
    "streetAddress": "KM 19 PH/ABA Expressway, Iriebe",

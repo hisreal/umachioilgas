@@ -44,7 +44,8 @@ require_once('header.php');
               </div>
               <div>
                 <h6 class="mb-1 fw-bold">Contact Information</h6>
-                <p class="mb-0">Phone: <a href="tel:09000000000">0900 000 0000</a></p>
+                <?php /* Phone hidden until the real number is ready
+                <p class="mb-0">Phone: <a href="tel:09000000000">0900 000 0000</a></p> */ ?>
                 <p class="mb-0">Email: <a href="mailto:info@umachioilgas.com">info@umachioilgas.com</a></p>
               </div>
             </div>
@@ -152,7 +153,7 @@ require_once('header.php');
               </div>
             </form>
 
-            <small class="text-muted d-block mt-3">We will contact you within 1 business hour for urgent requests. For immediate assistance call <a href="tel:09000000000">0900 000 0000</a>.</small>
+            <small class="text-muted d-block mt-3">We will contact you within 1 business hour for urgent requests.<?php /* For immediate assistance call <a href="tel:09000000000">0900 000 0000</a>. */ ?></small>
           </div>
         </div>
       </div>
