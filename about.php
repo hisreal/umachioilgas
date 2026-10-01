@@ -3,7 +3,7 @@ $title = "About Us | U-Machi Oil & Gas Ltd";
 $page = "about";
  require_once("header.php"); ?>
 <?php
-$hero_bg = 'assets/img/umachi.webp';
+$hero_bg = 'assets/img/about/about-hero.webp';
 $hero_title = 'About U-Machi <br>Oil & Gas Ltd.';
 $hero_subtitle = 'Delivering Reliable Energy Solutions Across Rivers State and Beyond.';
 require_once('hero-banner.php');
@@ -127,13 +127,79 @@ require_once('hero-banner.php');
 
 			<div class="col-lg-6 col-md-12">
 				<div class="feature-img wow fadeInUp" data-wow-delay=".6s">
-					<img src="assets/img/about-img.webp" alt="U-Machi Oil & Gas Operations" loading="lazy">
+					<img src="assets/img/about/about-overview.webp" alt="U-Machi Oil & Gas filling station" loading="lazy">
 				</div>
 			</div>
 
 		</div>
 	</div>
 </div>
-	<br>
-<br>
+<!-- Roadmap (content from the company profile: "Strategic Roadmap") -->
+<section class="roadmap-section section-padding" id="roadmap">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="section-title">
+                    <h6>Our Strategic Roadmap</h6>
+                </div>
+                <p class="mt-4">
+                    Our strategic roadmap is designed to create a diversified and scalable energy business.
+                    Our long-term growth strategy is built around five interconnected pillars.
+                </p>
+            </div>
+        </div>
+
+        <ol class="roadmap">
+
+            <li class="roadmap-item wow fadeInUp">
+                <span class="roadmap-node" aria-hidden="true">01</span>
+                <div class="roadmap-card">
+                    <div class="roadmap-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                    <h5>Strengthen the Core Business</h5>
+                    <p>We will continuously improve our retail, depot, bulk supply, distribution, and mobile fuel operations through efficiency, technology, strong customer service, and robust HSE practices.</p>
+                </div>
+            </li>
+
+            <li class="roadmap-item wow fadeInUp">
+                <span class="roadmap-node" aria-hidden="true">02</span>
+                <div class="roadmap-card">
+                    <div class="roadmap-icon"><i class="bi bi-buildings"></i></div>
+                    <h5>Establish the Corporate Headquarters</h5>
+                    <p>We plan to establish a central corporate headquarters to coordinate group strategy, administration, finance, operations, business development, and corporate governance.</p>
+                </div>
+            </li>
+
+            <li class="roadmap-item wow fadeInUp">
+                <span class="roadmap-node" aria-hidden="true">03</span>
+                <div class="roadmap-card">
+                    <div class="roadmap-icon"><i class="bi bi-diagram-3"></i></div>
+                    <h5>Develop Strategic Subsidiaries</h5>
+                    <p>We will establish specialised subsidiary companies to expand into areas such as petroleum supply, logistics, mobile fuel services, retail ventures, and other complementary energy businesses.</p>
+                </div>
+            </li>
+
+            <li class="roadmap-item wow fadeInUp">
+                <span class="roadmap-node" aria-hidden="true">04</span>
+                <div class="roadmap-card">
+                    <div class="roadmap-icon"><i class="bi bi-shop-window"></i></div>
+                    <h5>Franchise Operations</h5>
+                    <p>We will develop a structured franchise network that enables qualified partners to operate U-Machi-branded retail locations under consistent standards for quality, safety, service, and operations.</p>
+                </div>
+            </li>
+
+            <li class="roadmap-item wow fadeInUp">
+                <span class="roadmap-node" aria-hidden="true">05</span>
+                <div class="roadmap-card">
+                    <div class="roadmap-icon"><i class="bi bi-geo-alt"></i></div>
+                    <h5>National Expansion</h5>
+                    <p>Our long-term goal is to build a strong national footprint connecting our headquarters, subsidiaries, depots, retail stations, mobile fuel network, and franchise operations into an integrated energy business.</p>
+                </div>
+            </li>
+
+        </ol>
+
+    </div>
+</section>
+
 <?php require_once('footer.php'); ?>

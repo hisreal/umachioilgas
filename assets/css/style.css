@@ -5939,3 +5939,240 @@ a.reply-btn {
 	line-height: 1.75;
 	color: rgba(255, 255, 255, 0.88);
 }
+
+/* Icon-tile variant of .benefit-card for short, title-only items inside a
+   dark band: centred, a lit icon tile, and the same gradient border as the
+   service cards. */
+.section-dark .benefit-card.is-tile {
+	padding: 34px 20px 30px;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 18px;
+	background:
+		linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
+		linear-gradient(150deg, rgba(246, 139, 52, 0.7) 0%, rgba(255, 255, 255, 0.08) 40%, rgba(255, 255, 255, 0.04) 100%) border-box;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+	transition: box-shadow var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+}
+
+.section-dark .benefit-card.is-tile:hover {
+	transform: translateY(-4px);
+	background:
+		linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
+		linear-gradient(150deg, #f68b34 0%, #ff5722 45%, rgba(255, 255, 255, 0.10) 100%) border-box;
+	box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35), 0 8px 32px rgba(246, 139, 52, 0.18);
+}
+
+.section-dark .benefit-card.is-tile .benefit-icon {
+	display: grid;
+	place-items: center;
+	width: 72px;
+	height: 72px;
+	margin: 0 auto 20px;
+	border-radius: 18px;
+	background: radial-gradient(circle at 30% 25%, rgba(246, 139, 52, 0.28), rgba(246, 139, 52, 0.08) 70%);
+	border: 1px solid rgba(246, 139, 52, 0.35);
+}
+
+.section-dark .benefit-card.is-tile .benefit-icon i {
+	font-size: 30px;
+}
+
+.section-dark .benefit-card.is-tile h6 {
+	margin: 0;
+	font-size: 17px;
+}
+
+/* Prose inside the HSE commitment column (profile wording). Uses the muted
+   text colour for contrast; the global <p> grey is too light on white. */
+.hse-lead {
+	margin: 0 0 28px;
+	font-size: 16px;
+	line-height: 1.75;
+	color: var(--color-text-muted);
+}
+
+.hse-note {
+	margin: 4px 0 0;
+	padding-left: 18px;
+	border-left: 2px solid rgba(246, 139, 52, 0.55);
+	font-size: 15px;
+	line-height: 1.7;
+	color: var(--color-text-muted);
+}
+
+/* Strategic Roadmap: alternating timeline around a central spine.
+   Numbered nodes (the profile gives no dates, so none are invented).
+   Collapses to a single column with the spine on the left below 768px. */
+.roadmap-section {
+	background: linear-gradient(180deg, var(--color-white) 0%, #faf7f3 100%);
+}
+
+.roadmap {
+	position: relative;
+	list-style: none;
+	margin: 64px auto 0;
+	padding: 0;
+	max-width: 1040px;
+}
+
+.roadmap::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 2px;
+	margin-left: -1px;
+	background: linear-gradient(180deg, var(--color-primary), rgba(246, 139, 52, 0.15));
+}
+
+.roadmap-item {
+	position: relative;
+	width: 50%;
+	margin: 0;
+	padding: 0 60px 44px 0;
+}
+
+.roadmap-item:last-child {
+	padding-bottom: 0;
+}
+
+.roadmap-item:nth-child(even) {
+	margin-left: 50%;
+	padding: 0 0 44px 60px;
+}
+
+.roadmap-item:nth-child(even):last-child {
+	padding-bottom: 0;
+}
+
+.roadmap-node {
+	position: absolute;
+	top: 22px;
+	right: -23px;
+	z-index: 1;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: var(--gradient-brand);
+	color: var(--color-white);
+	font-size: 15px;
+	font-weight: 600;
+	box-shadow: 0 0 0 6px rgba(246, 139, 52, 0.16), 0 8px 18px rgba(246, 139, 52, 0.35);
+}
+
+.roadmap-item:nth-child(even) .roadmap-node {
+	right: auto;
+	left: -23px;
+}
+
+.roadmap-card {
+	position: relative;
+	padding: 30px 32px 28px;
+	background: var(--color-white);
+	border: 1px solid var(--color-border-light);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-sm);
+	transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+}
+
+.roadmap-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 24px;
+	right: 24px;
+	height: 3px;
+	border-radius: 0 0 3px 3px;
+	background: var(--gradient-brand);
+}
+
+/* connector from card to node */
+.roadmap-card::after {
+	content: "";
+	position: absolute;
+	top: 44px;
+	right: -37px;
+	width: 37px;
+	height: 2px;
+	background: rgba(246, 139, 52, 0.45);
+}
+
+.roadmap-item:nth-child(even) .roadmap-card::after {
+	right: auto;
+	left: -37px;
+}
+
+.roadmap-card:hover {
+	transform: translateY(-3px);
+	box-shadow: var(--shadow-md);
+}
+
+.roadmap-icon {
+	line-height: 1;
+	margin-bottom: 16px;
+}
+
+.roadmap-icon i {
+	font-size: 28px;
+	color: var(--color-primary);
+}
+
+.roadmap-card h5 {
+	margin: 0 0 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--color-heading);
+}
+
+.roadmap-card p {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.7;
+	color: var(--color-text-muted);
+}
+
+@media (max-width: 767px) {
+	.roadmap {
+		margin-top: 44px;
+	}
+
+	.roadmap::before {
+		left: 23px;
+		margin-left: -1px;
+	}
+
+	.roadmap-item,
+	.roadmap-item:nth-child(even) {
+		width: 100%;
+		margin-left: 0;
+		padding: 0 0 32px 68px;
+	}
+
+	.roadmap-node,
+	.roadmap-item:nth-child(even) .roadmap-node {
+		left: 0;
+		right: auto;
+	}
+
+	.roadmap-card::after,
+	.roadmap-item:nth-child(even) .roadmap-card::after {
+		left: -22px;
+		right: auto;
+		width: 22px;
+	}
+
+	.roadmap-card {
+		padding: 26px 24px 24px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.roadmap-card:hover {
+		transform: none;
+	}
+}

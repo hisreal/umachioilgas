@@ -44,6 +44,14 @@ require_once('hero-banner.php');
                             </div>
  			            </div>
 
+                    <p class="hse-lead">
+                        We prioritise the safe handling, storage, transportation, and dispensing of petroleum products
+                        across our operations. Through appropriate safety procedures, personnel training, use of personal
+                        protective equipment, equipment inspections, fire prevention measures, emergency preparedness,
+                        incident reporting, and continuous risk identification and mitigation, we work to maintain a safe
+                        operating environment and minimise potential hazards associated with our activities.
+                    </p>
+
                     <div class="hse-grid mb-5">
                         <div class="hse-item">
                             <i class="bi bi-box-seam"></i>
@@ -74,6 +82,11 @@ require_once('hero-banner.php');
                             <span>Continuous risk identification and mitigation</span>
                         </div>
                     </div>
+
+                    <p class="hse-note">
+                        U-Machi Oil &amp; Gas continuously strengthens its HSE culture through training, monitoring,
+                        accountability, compliance, and continuous improvement.
+                    </p>
                     
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 text-center">
