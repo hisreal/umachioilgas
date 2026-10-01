@@ -4,7 +4,7 @@ $page = "services";
 require_once("header.php"); ?>
 
 <?php
-$hero_bg = 'assets/img/slider/hero2-69a57feb1e5f0.webp';
+$hero_bg = 'assets/img/slider/home-hero.webp';
 $hero_title = 'Our Services';
 $hero_subtitle = 'U-Machi Oil & Gas Ltd provides a comprehensive range of petroleum supply and fuel logistics services.';
 require_once('hero-banner.php');

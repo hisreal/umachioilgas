@@ -4,7 +4,7 @@ $page = "fleetfuel";
 require_once('header.php'); ?>
 
 <?php
-$hero_bg = 'assets/img/slider/hero2-69a57feb1e5f0.webp';
+$hero_bg = 'assets/img/slider/home-hero.webp';
 $hero_title = 'Fleet Fuel Management';
 $hero_subtitle = 'Structured fuel supply solutions for fleet operators, built around efficiency and accountability.';
 require_once('hero-banner.php');

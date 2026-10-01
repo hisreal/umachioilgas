@@ -30,7 +30,7 @@ require_once('hero-banner.php');
 
             <div class="col-lg-6 col-md-12">
                 <div class="feature-img wow fadeInUp" data-wow-delay=".6s">
-                    <img src="assets/img/about-img.webp" alt="Mobile Fuel Services" loading="lazy">
+                    <img src="assets/img/service/mobile.webp" alt="U-Machi mobile fuel service delivering fuel to a customer" loading="lazy">
                 </div>
             </div>
 

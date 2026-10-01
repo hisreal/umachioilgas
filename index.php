@@ -151,7 +151,7 @@ require_once("hero.php"); ?>
  			<div class="row">
  				<div class="col-lg-3 col-md-6 col-sm-12 ">
  					<div class="xtra-serve-area mt-30 wow fadeInLeft" data-wow-delay=".3s">
- 						<img src="assets/img/one-1.webp" alt="" loading="lazy">
+ 						<img src="assets/img/why-choose-us/safety.webp" alt="Smiling U-Machi technician giving a thumbs-up at a station" loading="lazy">
  						<h5>Certified Safety <br>Standards</h5>
  					</div>
  				</div>
@@ -163,13 +163,13 @@ require_once("hero.php"); ?>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInRight" data-wow-delay=".4s">
- 						<img src="assets/img/professional-service.webp" alt="" loading="lazy">
+ 						<img src="assets/img/why-choose-us/team.webp" alt="The U-Machi operations team at a station" loading="lazy">
  						<h5>Professional <br>Operations Team</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInRight" data-wow-delay=".3s">
- 						<img src="assets/img/one-5.webp" alt="" loading="lazy">
+ 						<img src="assets/img/why-choose-us/delivery.webp" alt="U-Machi tanker at a loading bay" style="object-position:35% center" loading="lazy">
  						<h5>Fast Delivery <br>Turnaround</h5>
  					</div>
  				</div>

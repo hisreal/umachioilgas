@@ -2,7 +2,7 @@
 
     <!-- Decorative background images; only these crossfade. The text below is rendered once. -->
     <div class="hero-slide active" aria-hidden="true">
-        <img src="assets/img/slider/hero2-69a57feb1e5f0.webp" class="hero-bg" alt="" fetchpriority="high">
+        <img src="assets/img/slider/home-hero.webp" class="hero-bg" alt="" fetchpriority="high">
     </div>
     <div class="hero-slide" aria-hidden="true">
         <img src="assets/img/slider/hero1-69a57fb60f145.webp" class="hero-bg" alt="" fetchpriority="low">

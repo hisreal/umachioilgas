@@ -87,7 +87,7 @@
 
 <?php if ($page === 'home'): ?>
 <!-- Preload the homepage hero's first image (its largest paint) -->
-<link rel="preload" as="image" href="assets/img/slider/hero2-69a57feb1e5f0.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/slider/home-hero.webp" fetchpriority="high">
 <?php endif; ?>
 
 <!-- Main CSS -->

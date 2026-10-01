@@ -4,7 +4,7 @@ $page = "retaildepot";
 require_once('header.php'); ?>
 
 <?php
-$hero_bg = 'assets/img/slider/hero2-69a57feb1e5f0.webp';
+$hero_bg = 'assets/img/slider/home-hero.webp';
 $hero_title = 'Retail & Depot Operations';
 $hero_subtitle = 'Efficient, controlled, safe, and customer-focused petroleum services at every U-Machi location.';
 require_once('hero-banner.php');
@@ -43,7 +43,7 @@ require_once('hero-banner.php');
 
             <div class="col-lg-6 col-md-12">
                 <div class="feature-img wow fadeInUp" data-wow-delay=".6s">
-                    <img src="assets/img/about-img.webp" alt="Retail & Depot Operations" loading="lazy">
+                    <img src="assets/img/service/retail.webp" alt="U-Machi fuel dispensers at a retail station" loading="lazy">
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ $page = "bulksupply";
 require_once('header.php'); ?>
 
 <?php
-$hero_bg = 'assets/img/slider/hero2-69a57feb1e5f0.webp';
+$hero_bg = 'assets/img/slider/home-hero.webp';
 $hero_title = 'Bulk Petroleum Marketing, Distribution & Supply';
 $hero_subtitle = 'Reliable bulk petroleum solutions for commercial, industrial, retail, and other high-volume customers.';
 require_once('hero-banner.php');
@@ -29,8 +29,7 @@ require_once('hero-banner.php');
 
             <div class="col-lg-6 col-md-12">
                 <div class="feature-img wow fadeInUp" data-wow-delay=".6s">
-                    <!-- PLACEHOLDER IMAGE: swap src for the bulk supply / tanker photo when ready -->
-                    <img src="assets/img/about-img.webp" alt="Bulk Petroleum Marketing, Distribution & Supply" loading="lazy">
+                    <img src="assets/img/service/bulk.webp" alt="U-Machi bulk tanker loading at a depot" loading="lazy">
                 </div>
             </div>
 
