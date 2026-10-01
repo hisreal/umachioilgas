@@ -227,10 +227,54 @@
 		},
 	  });
 
-	//jQuery Sticky Area 
-	$('.sticky-area').sticky({
-		topSpacing: 0,
-	});
+	// Sticky header. The bar is always position:fixed (see style.css);
+	// the <header> reserves the bar's full, unscrolled height so content
+	// never jumps when the bar condenses, and .is-scrolled drives the
+	// condensed/translucent state.
+	var header = document.querySelector('.header-area');
+	var stickyArea = header && header.querySelector('.sticky-area');
+
+	if (stickyArea) {
+		var SCROLL_THRESHOLD = 10;
+		var remeasureAtTop = false;
+		var ticking = false;
+
+		var reserveHeaderSpace = function () {
+			// Only measure the full-height bar, never the condensed one.
+			if (header.classList.contains('is-scrolled')) {
+				remeasureAtTop = true;
+				return;
+			}
+			var height = stickyArea.offsetHeight;
+			header.style.minHeight = height + 'px';
+			// Used by scroll-padding-top so anchor targets clear the bar.
+			document.documentElement.style.setProperty('--header-height', height + 'px');
+		};
+
+		var updateHeaderState = function () {
+			ticking = false;
+			var scrolled = window.scrollY > SCROLL_THRESHOLD;
+			if (scrolled === header.classList.contains('is-scrolled')) {
+				return;
+			}
+			header.classList.toggle('is-scrolled', scrolled);
+			if (!scrolled && remeasureAtTop) {
+				remeasureAtTop = false;
+				// Wait for the expand transition to finish before measuring.
+				setTimeout(reserveHeaderSpace, 350);
+			}
+		};
+
+		reserveHeaderSpace();
+		updateHeaderState();
+		$(window).on('load resize', reserveHeaderSpace);
+		window.addEventListener('scroll', function () {
+			if (!ticking) {
+				ticking = true;
+				window.requestAnimationFrame(updateHeaderState);
+			}
+		}, { passive: true });
+	}
 
 	//Progress Bar JS
 
@@ -278,16 +322,59 @@
 	  });
 
 
-	//jQuery Animation  
-	new WOW().init(
+	// Scroll reveals (replaces WOW.js + animate.css). Reuses the existing
+	// .wow markup; each element is revealed once as it enters the viewport.
+	// header.php only adds .js-reveal when motion is allowed and
+	// IntersectionObserver exists, so check that rather than re-deciding.
+	(function () {
+		var root = document.documentElement;
+		var targets = document.querySelectorAll('.wow');
+		if (!root.classList.contains('js-reveal') || !targets.length) {
+			return;
+		}
 
-	);
+		var REVEAL_MS = 600; // matches --dur-slow
+
+		var reveal = function (el) {
+			el.classList.add('is-revealed');
+			var delayMs = (parseFloat(el.style.transitionDelay) || 0) * 1000;
+			// Once the entrance has played, drop the reveal classes so the
+			// element's own transitions (hover effects etc.) apply again.
+			setTimeout(function () {
+				el.classList.remove('wow', 'is-revealed', 'fadeInUp', 'fadeInLeft', 'fadeInRight');
+				el.style.transitionDelay = '';
+			}, REVEAL_MS + delayMs + 50);
+		};
+
+		targets.forEach(function (el) {
+			// Legacy delays were tuned for 1s animations; keep their order
+			// but halve and cap them so nothing waits long to appear.
+			var delay = parseFloat(el.getAttribute('data-wow-delay')) || 0;
+			if (delay) {
+				el.style.transitionDelay = Math.min(delay * 0.5, 0.3) + 's';
+			}
+		});
+
+		var observer = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					reveal(entry.target);
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+
+		targets.forEach(function (el) {
+			observer.observe(el);
+		});
+		window.revealReady = true;
+	})();
 
 	// SCROLLTO THE TOP
 
 	// Show or hide the sticky footer button
 	$(window).on("scroll", function () {
-		if ($(this).scrollTop() > 6000) {
+		if ($(this).scrollTop() > 600) {
 			$('.go-top').fadeIn(200);
 		} else {
 			$('.go-top').fadeOut(200);
@@ -296,12 +383,12 @@
 
 
 	// Animate the scroll to top
+	// Native smooth scroll (jQuery's scrollTop animation fights CSS
+	// scroll-behavior: smooth and stutters). Instant under reduced motion.
 	$('.go-top').on("click", function (event) {
 		event.preventDefault();
-
-		$('html, body').animate({
-			scrollTop: 0
-		}, 1500);
+		var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
 	});
 
 	// Active & Remove Class 

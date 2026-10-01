@@ -2,27 +2,12 @@
 $title = "Health Safety & Environment | U-Machi Oil & Gas Ltd";
 $page = "hse";
 require_once('header.php'); ?>
-<div class="">
- 		<div style="background-image: url('assets/img/hse.png');" class="single-slide-item">
- 			<div class="overlay"></div>
- 			<div class="hero-area-content">
- 				<div class="container">
- 					<div class="row justify-content-center">
- 						<div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
- 							<div class="section-title">
-                            <h1>Safety Is <br>Non-Negotiable</h1>
-                            <p>
-                               At U-Machi Oil & Gas Ltd, safety is at the core of everything we do. 
-                               <br>We operate with strict adherence to industry regulations and environmental standards.
-.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+$hero_bg = 'assets/img/hse.webp';
+$hero_title = 'Safety Is Non-Negotiable';
+$hero_subtitle = 'At U-Machi Oil & Gas Ltd, safety is at the core of everything we do. We operate with strict adherence to industry regulations and environmental standards.';
+require_once('hero-banner.php');
+?>
 
 
 <section style="margin-top: 40px" class="hse-split-section">
@@ -31,13 +16,16 @@ require_once('header.php'); ?>
         <div class="row g-0 align-items-stretch">
 
             <!-- Left Refinery Background -->
-            <div style="background: url('assets/img/about-img.png') center/cover no-repeat;" class="col-lg-6 hse-image">
+            <div style="background: url('assets/img/about-img.webp') center/cover no-repeat;" class="col-lg-6 hse-image">
                 <div class="hse-image-overlay"></div>
                 <div class="hse-image-content text-white">
                     <h2 style="color: white" class="fw-bold">Committed to Safe & Responsible Operations</h2>
                     <p  class="mt-3 text-white">
-                        We integrate health, safety and environmental excellence
-                        into every level of our petroleum supply chain.
+                        At U-Machi Oil & Gas Ltd., Health, Safety and Environmental responsibility is
+                        fundamental to the way we conduct our business. Our HSE approach is centred on
+                        protecting our employees, customers, contractors, visitors, business partners,
+                        surrounding communities, and the environment while ensuring that our operations
+                        are conducted responsibly and safely.
                     </p>
                 </div>
             </div>
@@ -58,24 +46,32 @@ require_once('header.php'); ?>
 
                     <div class="hse-grid mb-5">
                         <div class="hse-item">
-                            <i class="bi bi-shield-check"></i>
-                            <span>Compliance with regulatory guidelines</span>
-                        </div>
-                        <div class="hse-item">
-                            <i class="bi bi-tools"></i>
-                            <span>Regular equipment inspection and maintenance</span>
-                        </div>
-                        <div class="hse-item">
                             <i class="bi bi-box-seam"></i>
-                            <span>Proper handling and storage procedures</span>
-                        </div>
-                        <div class="hse-item">
-                            <i class="bi bi-exclamation-triangle"></i>
-                            <span>Emergency response preparedness</span>
+                            <span>Safe handling, storage, transportation & dispensing of petroleum products</span>
                         </div>
                         <div class="hse-item">
                             <i class="bi bi-person-workspace"></i>
-                            <span>Continuous staff safety training</span>
+                            <span>Personnel training and use of personal protective equipment</span>
+                        </div>
+                        <div class="hse-item">
+                            <i class="bi bi-tools"></i>
+                            <span>Regular equipment inspections</span>
+                        </div>
+                        <div class="hse-item">
+                            <i class="bi bi-fire"></i>
+                            <span>Fire prevention measures</span>
+                        </div>
+                        <div class="hse-item">
+                            <i class="bi bi-exclamation-triangle"></i>
+                            <span>Emergency preparedness</span>
+                        </div>
+                        <div class="hse-item">
+                            <i class="bi bi-clipboard-check"></i>
+                            <span>Incident reporting</span>
+                        </div>
+                        <div class="hse-item">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Continuous risk identification and mitigation</span>
                         </div>
                     </div>
                     
@@ -93,19 +89,23 @@ require_once('header.php'); ?>
                     <div class="hse-grid">
                         <div class="hse-item">
                             <i class="bi bi-droplet-half"></i>
-                            <span>Preventing spills and environmental contamination</span>
+                            <span>Preventing and responding appropriately to fuel spills</span>
                         </div>
                         <div class="hse-item">
                             <i class="bi bi-recycle"></i>
-                            <span>Safe waste disposal</span>
+                            <span>Managing waste responsibly</span>
                         </div>
                         <div class="hse-item">
                             <i class="bi bi-graph-down-arrow"></i>
-                            <span>Minimizing operational risks</span>
+                            <span>Reducing the risk of pollution</span>
                         </div>
                         <div class="hse-item">
                             <i class="bi bi-globe2"></i>
-                            <span>Promoting sustainable practices</span>
+                            <span>Promoting environmental awareness</span>
+                        </div>
+                        <div class="hse-item">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Complying with applicable environmental requirements</span>
                         </div>
                     </div>
                     
@@ -122,11 +122,13 @@ require_once('header.php'); ?>
                                 </div>
                             </div>
  			            </div>
-                    <div style="margin-bottom: -10px; margin-bottom: 90px" class="hse-goal-box text-center">
-                        <h5 style="color: white" >
-                            To ensure zero incidents, zero harm, and zero environmental damage in all operations.
-                        </h4>
-                    </div>
+                    <blockquote class="hse-goal-box">
+                        <p>
+                            Our commitment is simple: to conduct every operation safely and responsibly, protect
+                            the people we work with and the communities we serve, and ensure that everyone who
+                            interacts with our operations can return home safely.
+                        </p>
+                    </blockquote>
                 </div>
             </div>
 

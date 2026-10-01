@@ -9,6 +9,27 @@
 
 <title><?php echo $title; ?></title>
 
+<script>
+// Scroll-reveal setup: hide .wow elements from the first paint (avoids a
+// visible -> hidden -> fade-in flash). If main.js never takes over,
+// withdraw the class so content can't stay invisible.
+(function () {
+    var root = document.documentElement;
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+    root.classList.add('js-reveal');
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            if (!window.revealReady) {
+                root.classList.remove('js-reveal');
+            }
+        }, 1500);
+    });
+})();
+</script>
+
 <!-- Primary SEO -->
 <meta name="description" content="U-Machi Oil & Gas Ltd provides reliable bulk petroleum supply, diesel delivery, mobile fuel services, marine gas oil and fuel logistics for industries, construction, marine and corporate organizations across Nigeria.">
 
@@ -35,6 +56,11 @@
 <!-- Favicon -->
 <link rel="icon" href="assets/img/logo1.png" type="image/png">
 
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <!-- Bootstrap CSS -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -46,9 +72,6 @@
 
 <!-- Line Awesome -->
 <link href="assets/css/line-awesome.min.css" rel="stylesheet">
-
-<!-- Animate CSS -->
-<link href="assets/css/animate.css" rel="stylesheet">
 
 <!-- Bar Filler -->
 <link href="assets/css/barfiller.css" rel="stylesheet">
@@ -62,9 +85,10 @@
 <!-- Owl Carousel -->
 <link href="assets/css/owl.carousel.css" rel="stylesheet">
 
-<!-- Preload Hero Images -->
-<link rel="preload" as="image" href="assets/img/slider/hero2-69a57feb1e5f0.webp">
-<link rel="preload" as="image" href="assets/img/slider/hero1-69a57fb60f145.webp">
+<?php if ($page === 'home'): ?>
+<!-- Preload the homepage hero's first image (its largest paint) -->
+<link rel="preload" as="image" href="assets/img/slider/hero2-69a57feb1e5f0.webp" fetchpriority="high">
+<?php endif; ?>
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="assets/css/style.css?v=<?php echo filemtime('assets/css/style.css');?>">
@@ -133,8 +157,7 @@
 
 <div class="logo">
 <a class="navbar-brand" href="index.php">
-<img style="padding:10px;width:200px"
-src="assets/img/logo2.png"
+<img src="assets/img/logo2.png" width="1200" height="404"
 alt="U-Machi Oil and Gas Limited Nigeria Petroleum Supply Company">
 </a>
 </div>
@@ -174,11 +197,13 @@ aria-label="Toggle navigation">
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='services') echo 'active'; ?>" href="services.php">Services</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link <?php if($page=='mobilefuel') echo 'active'; ?>" href="mobilefuel.php">Mobile Fuel Services</a>
+        <a class="nav-link <?php if(in_array($page, array('services','retaildepot','bulksupply','fleetfuel','mobilefuel'))) echo 'active'; ?>" href="services.php">Services</a>
+        <ul class="sub-menu">
+            <li><a href="retaildepot.php">Retail & Depot Operations</a></li>
+            <li><a href="bulksupply.php">Bulk Petroleum Marketing, Distribution & Supply</a></li>
+            <li><a href="fleetfuel.php">Fleet Fuel Management</a></li>
+            <li><a href="mobilefuel.php">Mobile Fuel Services</a></li>
+        </ul>
     </li>
 
     <li class="nav-item">
@@ -230,13 +255,14 @@ aria-label="Toggle navigation">
 
 <div class="upper-text">
 <div class="text">Search for anything.</div>
-<button class="close-search"><span class="la la-times"></span></button>
+<button class="close-search" aria-label="Close search"><span class="la la-times"></span></button>
 </div>
 
 <form method="post" action="#">
 <div class="form-group">
-<input type="search" name="search-field" placeholder="Search..." required>
-<button type="submit"><i class="la la-search"></i></button>
+<label for="search-field" class="visually-hidden">Search</label>
+<input id="search-field" type="search" name="search-field" placeholder="Search..." required>
+<button type="submit" aria-label="Submit search"><i class="la la-search"></i></button>
 </div>
 </form>
 

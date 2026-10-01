@@ -10,7 +10,7 @@ require_once('header.php');
     <div class="text-center mb-5">
       <div class="section-title">
      
-        <h2 class="fw-bold">Get in Touch</h2>
+        <h1 class="fw-bold">Get in Touch</h1>
         <p class=" text-white">Have questions or need immediate fuel supply? Our team is ready to assist.</p>
       </div>
     </div>
@@ -144,16 +144,11 @@ require_once('header.php');
 
              <div class="col-12">
                 <div class="d-grid">
-                  <button type="submit" id="submitBtn" class="btn btn-warning btn-lg">
+                  <button type="submit" id="submitBtn" class="main-btn w-100">
                     Request Quote
                   </button>
                 </div>
               </div>
-
-                <!-- Alert Message Here -->
-                <div class="col-12">
-                  <div id="alertMessage"></div>
-                </div>
 
               </div>
             </form>

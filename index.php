@@ -10,20 +10,23 @@ require_once("hero.php"); ?>
  			<div class="row align-items-center">
  				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
  					<div class="info-content-area">
- 						
- 						<p>U-Machi Oil & Gas Ltd is a trusted indigenous energy company providing bulk petroleum supply, 
-							retail distribution, and mobile fuel delivery services across Rivers State and Nigeria.</p>
 
-						<p>We ensure safe, timely, and efficient energy delivery because your operations depend on it.
+ 						<div class="section-title">
+ 							<h6>Who We Are</h6>
+ 						</div>
+
+ 						<p>U-Machi Oil & Gas Ltd. is an indigenous oil and gas company strategically positioned to support Nigeria's growing demand for reliable petroleum distribution and fuel logistics services.</p>
+
+						<p>With an operational presence in Port Harcourt, Rivers State, we provide seamless energy solutions to industrial, commercial, and residential clients, helping businesses and communities access the petroleum products they need to operate, grow, and thrive.
 						</p>
- 						<a href="contact.php#quotes" class="main-btn">Request a Quote</a>
+ 						<a href="about.php" class="main-btn">Learn More</a>
  					</div>
  				</div>
 
  				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
 					
  					<div class="info-img">
- 						<img src="assets/img/slider/hero1.png" alt="">
+ 						<img src="assets/img/slider/hero1-about.webp" alt="" loading="lazy">
 
 						 
  					</div>
@@ -32,28 +35,6 @@ require_once("hero.php"); ?>
  			</div>
  		</div>
  	</div>
-
-		<!-- SERVICES SECTION -->
-<section class="services-section py-5 bg-light">
-    <div class="container">
-
-    	<div class="row justify-content-center g-4">
- 				<div class="col-xl-8 col-lg-12 text-center">
- 					<div class="section-title">
- 						<h6>Who we are</h6>
-						<br>
-						<br>
-						<p>U-Machi Oil & Gas Ltd is committed to delivering premium petroleum products with 
-							unmatched reliability. We serve businesses, institutions, fleet operators, 
-							estates, and construction companies with dependable fuel supply solutions.</p>
-							<a href="about.php" class="main-btn">Know More</a>
- 					</div>
- 				</div>
- 			</div>
-		</div>
-	</section>
-
-
 
 	<!-- SERVICES SECTION -->
 <section class="services-section bg-light">
@@ -79,13 +60,13 @@ require_once("hero.php"); ?>
                         <img src="assets/img/icon/barrel.png" alt="Bulk Petroleum Supply">
                     </div>
 
-                    <h5  class="fw-bold heading">Bulk Petroleum Supply</h5>
+                    <h5  class="fw-bold heading">Bulk Petroleum Marketing, Distribution & Supply</h5>
 
                     <p class="flex-grow-1 mt-3">
-                        We supply premium-grade petroleum products in bulk quantities...
+                        We provide reliable bulk petroleum marketing, distribution, and supply solutions to commercial, industrial, retail, and other high-volume customers.
                     </p>
 
-                    <a href="services.php#1" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="bulksupply.php" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -99,13 +80,13 @@ require_once("hero.php"); ?>
                         <img src="assets/img/icon/fuel-station.png" alt="Mobile Fuel Delivery">
                     </div>
 
-                    <h5 class="fw-bold heading">Mobile Fuel Delivery</h5>
+                    <h5 class="fw-bold heading">Mobile Fuel Service</h5>
 
                     <p class="flex-grow-1">
-                        Our mobile fueling units deliver diesel and petrol directly to your site safely and efficiently.
+                        We provide mobile fuel delivery services designed to bring petroleum products directly to customers at their preferred locations.
                     </p>
 
-                    <a href="services.php#2" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="mobilefuel.php" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -125,7 +106,7 @@ require_once("hero.php"); ?>
                         Structured fuel supply solutions for fleet operators including scheduled deliveries, monitoring, and billing...
                     </p>
 
-                    <a href="services.php#3" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="fleetfuel.php" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -142,10 +123,10 @@ require_once("hero.php"); ?>
                     <h5 class="fw-bold heading">Retail & Depot Operations</h5>
 
                     <p class="flex-grow-1">
-                        Our strategically located facility supports safe storage and distribution of petroleum products.
+                        Our Retail & Depot Operations are designed to ensure that every U-Machi location delivers efficient, controlled, safe, and customer-focused petroleum services.
                     </p>
 
-                    <a href="services.php#4" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="retaildepot.php" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -170,25 +151,25 @@ require_once("hero.php"); ?>
  			<div class="row">
  				<div class="col-lg-3 col-md-6 col-sm-12 ">
  					<div class="xtra-serve-area mt-30 wow fadeInLeft" data-wow-delay=".3s">
- 						<img src="assets/img/one (1).jpg" alt="">
+ 						<img src="assets/img/one-1.webp" alt="" loading="lazy">
  						<h5>Certified Safety <br>Standards</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInLeft" data-wow-delay=".4s">
- 						<img src="assets/img/one (7).jpg" alt="">
+ 						<img src="assets/img/one-7.webp" alt="" loading="lazy">
  						<h5>Quality Assured <br>Products</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInRight" data-wow-delay=".4s">
- 						<img src="assets/img/profesional_service.jpg" alt="">
+ 						<img src="assets/img/professional-service.webp" alt="" loading="lazy">
  						<h5>Professional <br>Operations Team</h5>
  					</div>
  				</div>
  				<div class="col-lg-3 col-md-6 col-sm-12">
  					<div class="xtra-serve-area mt-30 bg-cover wow fadeInRight" data-wow-delay=".3s">
- 						<img src="assets/img/one (5).jpg" alt="">
+ 						<img src="assets/img/one-5.webp" alt="" loading="lazy">
  						<h5>Fast Delivery <br>Turnaround</h5>
  					</div>
  				</div>
@@ -282,7 +263,7 @@ require_once("hero.php"); ?>
                 </div>
                 <div class="col-xl-6 col-lg-6 align-items-end">
                     <div class="faq-img-wrap">
-                        <img s src="assets/img/slider/banner.png" alt="">
+                        <img src="assets/img/slider/banner.webp" alt="" loading="lazy">
                     </div>
                 </div>
             </div>

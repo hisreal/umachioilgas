@@ -2,26 +2,12 @@
 $title = "Industries We Serve | U-Machi Oil & Gas Ltd";
 $page = "industries";
  require_once('header.php'); ?>
-<div class="">
- 		<div style="background-image: url('assets/img/industries.png');" class="single-slide-item">
- 			<div class="overlay"></div>
- 			<div class="hero-area-content">
- 				<div class="container">
- 					<div class="row justify-content-center">
- 						<div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
- 							<div class="section-title">
-                            <h1>Industries We <br>Serve</h1>
-                            <p>
-                            U-Machi Oil & Gas Ltd provides tailore fuel solutions to diverse 
-                            <br>industries across Rivers State and beyond.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+$hero_bg = 'assets/img/industries.webp';
+$hero_title = 'Industries We Serve';
+$hero_subtitle = 'U-Machi Oil & Gas Ltd provides tailored fuel solutions to diverse industries across Rivers State and beyond.';
+require_once('hero-banner.php');
+?>
 
 <section style="background: white" class="section-padding bg-light">
 
@@ -34,7 +20,7 @@ $page = "industries";
             <div class="row g-4">
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-gear-wide-connected"></i>
                         </div>
@@ -46,7 +32,7 @@ $page = "industries";
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-cone-striped"></i>
                         </div>
@@ -58,7 +44,7 @@ $page = "industries";
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-fuel-pump"></i>
                         </div>
@@ -70,7 +56,7 @@ $page = "industries";
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-water"></i>
                         </div>
@@ -82,7 +68,7 @@ $page = "industries";
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-building"></i>
                         </div>
@@ -94,7 +80,7 @@ $page = "industries";
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-broadcast"></i>
                         </div>
@@ -106,7 +92,7 @@ $page = "industries";
                 </div>
 
                 <div class="col-lg-4 col-md-6 mx-auto">
-                    <div class="benefit-card text-center">
+                    <div class="benefit-card">
                         <div class="benefit-icon">
                             <i class="bi bi-house-gear"></i>
                         </div>

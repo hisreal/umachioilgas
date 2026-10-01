@@ -37,7 +37,7 @@
 			<div class="footer-up">
 				<div class="row gy-4">
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<a href="index-2.html" class="logo">
+						<a href="index.php" class="logo">
 							<img style="width: 200px" src="assets/img/logo2.png" alt="Umachioilgas-logo">
 						</a>
 					
@@ -72,17 +72,14 @@
 					<div class="col-lg-2 offset-lg-1 col-md-6 com-sm-12">
 						<h5>Links</h5>
 						<ul>
-							<li>
-								<a href="index.php">Home</a>
-								<a href="about.php">About</a>
-								<a href="services.php">Services</a>									
-								<a href="about.php">About Us </a>
-								<a href="mobilefuel.php"> Mobile Fuel Services</a>
-								<a href="hse.php"> HSE</a>
-								<a href="industries"> Industries</a>
-								<a href="faq.php"> Faq</a>
-								<a href="contact.php"> Contact</a>
-							</li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="services.php">Services</a></li>
+							<li><a href="mobilefuel.php">Mobile Fuel Services</a></li>
+							<li><a href="hse.php">HSE</a></li>
+							<li><a href="industries.php">Industries</a></li>
+							<li><a href="faq.php">Faq</a></li>
+							<li><a href="contact.php">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
@@ -126,30 +123,16 @@
  	<script src="assets/js/popper.min.js"></script>
  	<!-- Bootstrap JS -->
  	<script src="assets/js/bootstrap.min.js"></script>
- 	<!-- Wow JS -->
- 	<script src="assets/js/wow.min.js"></script>
  	<!-- Way Points JS -->
  	<script src="assets/js/jquery.waypoints.min.js"></script>
  	<!-- Counter Up JS -->
  	<script src="assets/js/jquery.counterup.min.js"></script>
- 	<!-- Owl Carousel JS -->
- 	<script src="assets/js/owl.carousel.min.js"></script>
  	<!-- Magnific Popup JS -->
  	<script src="assets/js/magnific-popup.min.js"></script>
- 	<!-- Sticky JS -->
- 	<script src="assets/js/jquery.sticky.js"></script>
  	<!-- Progress Bar JS -->
  	<script src="assets/js/jquery.barfiller.js"></script>
  	<!-- Main JS -->
- 	<script src="assets/js/main.js"></script>
-
-		<!-- jQuery FIRST -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Owl Carousel JS SECOND -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-	
+ 	<script src="assets/js/main.js?v=<?php echo filemtime('assets/js/main.js'); ?>"></script>
 
 <script>
 $(document).ready(function() {
@@ -193,7 +176,6 @@ $(document).ready(function() {
         });
     });
 });
-submitBtn.html('<span class="spinner-border spinner-border-sm"></span> Sending...');
 </script>
 
 <script>
@@ -273,7 +255,13 @@ function changeHeroSlide(){
     slides[current].classList.add("active");
 }
 
-setInterval(changeHeroSlide, 6000);
+// .hero-slide only exists on the homepage; guard so this doesn't throw
+// on every other page that shares this footer. Don't auto-rotate for
+// users who have asked for reduced motion.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (slides.length > 1 && !reduceMotion) {
+    setInterval(changeHeroSlide, 6000);
+}
 </script>
 
 

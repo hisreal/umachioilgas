@@ -2,28 +2,12 @@
 $title = "Frequently Asked Questions | U-Machi Oil & Gas Ltd";
 $page = "faq";
  require_once('header.php'); ?>
-<!-- Hero Section -->
-<div class="">
-    <div class="single-slide-item" style="background-image: url('assets/img/faqq.jpg');">
-        <div class="overlay"></div>
-        <div class="hero-area-content">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-12">
-                        <div class="section-title text-white">
-                            <h1>Frequently <br> Asked Questions</h1>
-                            <p>
-                                Find answers to common questions 
-                                about our services,delivery options, 
-                                safety standards, and operations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+$hero_bg = 'assets/img/faqq.webp';
+$hero_title = 'Frequently Asked Questions';
+$hero_subtitle = 'Find answers to common questions about our services, delivery options, safety standards, and operations.';
+require_once('hero-banner.php');
+?>
 <!-- Faq Section -->
 <div style="background:#ffffff" class="faq-section section-padding">
     <div class="container">
