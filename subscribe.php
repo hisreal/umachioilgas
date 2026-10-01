@@ -2,7 +2,6 @@
 header('Content-Type: application/json');
 
 
-$dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
 
 $email = trim($_POST['email'] ?? '');
 
