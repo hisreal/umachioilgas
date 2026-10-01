@@ -75,7 +75,6 @@
 							<li><a href="./">Home</a></li>
 							<li><a href="about">About</a></li>
 							<li><a href="services">Services</a></li>
-							<li><a href="mobilefuel">Mobile Fuel Services</a></li>
 							<li><a href="hse">HSE</a></li>
 							<li><a href="industries">Industries</a></li>
 							<li><a href="faq">Faq</a></li>
@@ -87,8 +86,9 @@
 						<ul>
 							<li>
 								<div class="social-area">
-									<a href="#"><i class="lab la-facebook-f"></i>Facebook</a>
-									<a href="https://www.instagram.com/umachioilandgas?igsh=MWVpcmJnaHF6ZzdyNg==" target="_blank"><i class="lab la-instagram"></i>Instagram</a>
+									<?php /* Facebook: hidden until the page link is ready
+									<a href="#"><i class="lab la-facebook-f"></i>Facebook</a> */ ?>
+									<a href="https://www.instagram.com/umachioil" target="_blank" rel="noopener noreferrer"><i class="lab la-instagram"></i>Instagram</a>
 								
 								</div>
 							</li>

@@ -6153,3 +6153,39 @@ a.reply-btn {
         background: linear-gradient(180deg, rgba(10,20,30,0.78) 0%, rgba(10,20,30,0.88) 100%);
     }
 }
+
+/* Larger lead paragraph for the first block of text in a dark band */
+.section-dark .lead-text {
+	font-size: 18px;
+	line-height: 1.75;
+	color: rgba(255, 255, 255, 0.88);
+}
+
+/* Homepage FAQ: when the columns stack, give the "Read More" button room
+   above the image (the gradient plate also sticks out below the photo). */
+@media (max-width: 991px) {
+    .faq-more {
+        margin-bottom: 8px;
+    }
+
+    .faq-img-wrap {
+        margin-top: 56px;
+        margin-bottom: 24px;
+    }
+}
+
+/* Phones: Bootstrap's g-5 gutter (3rem) pulls rows 24px past the container's
+   12px padding, so the page scrolled sideways and showed a blank strip. Use
+   the normal gutter when stacked; clip is a safety net that, unlike
+   overflow:hidden, doesn't create a scroll container. */
+@media (max-width: 991px) {
+    .g-5,
+    .gx-5 {
+        --bs-gutter-x: 1.5rem;
+    }
+}
+
+html,
+body {
+    overflow-x: clip;
+}

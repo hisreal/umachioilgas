@@ -237,4 +237,17 @@ require_once('hero-banner.php');
 
 </section>
 
+<!-- CTA (placeholder copy: edit to taste) -->
+<div class="section-padding">
+    <div class="container">
+        <div class="partner-cta d-flex flex-wrap justify-content-between align-items-center">
+            <div class="partner-cta-text">
+                <h3>Fuel Delivered To Your Door</h3>
+                <p>Request mobile fuel delivery to your home, business or site. Convenient, safe and reliable.</p>
+            </div>
+            <a href="contact#quotes" class="nav-cta-btn partner-cta-btn">Request Fuel Now</a>
+        </div>
+    </div>
+</div>
+
 <?php require_once('footer.php'); ?>

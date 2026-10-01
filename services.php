@@ -33,6 +33,27 @@ require_once('hero-banner.php');
                 <div class="service-card p-4 h-100 d-flex flex-column text-center">
 
                     <div class="service-icon mb-4">
+                        <img src="assets/img/icon/retail.png" alt="Retail & Depot Operations">
+                    </div>
+
+                    <h5 class="fw-bold heading">Retail & Depot Operations</h5>
+
+                    <p class="flex-grow-1 mt-3">
+                        Our Retail & Depot Operations are designed to ensure that every U-Machi location delivers efficient, controlled, safe, and customer-focused petroleum services.
+                    </p>
+
+                    <a href="retaildepot" class="btn btn-umachi w-100 mt-3">Read More</a>
+
+                </div>
+            </div>
+
+        </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card p-4 h-100 d-flex flex-column text-center">
+
+                    <div class="service-icon mb-4">
                         <img src="assets/img/icon/barrel.png" alt="Bulk Petroleum Marketing, Distribution & Supply">
                     </div>
 
@@ -47,7 +68,7 @@ require_once('hero-banner.php');
                 </div>
             </div>
 
-            <!-- Service 2 -->
+            <!-- Service 3 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card p-4 h-100 d-flex flex-column text-center">
 
@@ -65,27 +86,6 @@ require_once('hero-banner.php');
 
                 </div>
             </div>
-
-            <!-- Service 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card p-4 h-100 d-flex flex-column text-center">
-
-                    <div class="service-icon mb-4">
-                        <img src="assets/img/icon/retail.png" alt="Retail & Depot Operations">
-                    </div>
-
-                    <h5 class="fw-bold heading">Retail & Depot Operations</h5>
-
-                    <p class="flex-grow-1 mt-3">
-                        Our Retail & Depot Operations are designed to ensure that every U-Machi location delivers efficient, controlled, safe, and customer-focused petroleum services.
-                    </p>
-
-                    <a href="retaildepot" class="btn btn-umachi w-100 mt-3">Read More</a>
-
-                </div>
-            </div>
-
-        </div>
     </div>
 </section>
 
