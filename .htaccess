@@ -1,0 +1,49 @@
+RewriteEngine On
+
+# -----------------------------------------------------------------
+# 1. Canonical host: always https://www.umachioilgas.com
+#    Only applies on the live domain, so localhost / staging hosts
+#    and the portal subdomain are left alone.
+# -----------------------------------------------------------------
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?umachioilgas\.com$ [NC]
+RewriteRule ^ https://www.umachioilgas.com%{REQUEST_URI} [L,R=301]
+
+# -----------------------------------------------------------------
+# 2. Hide .php: redirect /about.php -> /about (GET/HEAD only, so form
+#    posts to .php endpoints are never redirected). Top-level files only.
+# -----------------------------------------------------------------
+RewriteCond %{THE_REQUEST} "^(GET|HEAD) [^ ?]*\.php[ ?]"
+RewriteCond %{REQUEST_URI} ^(.*/)index\.php$
+RewriteRule ^index\.php$ %1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} "^(GET|HEAD) [^ ?]*\.php[ ?]"
+RewriteCond %{REQUEST_URI} ^(.*/)[^/]+\.php$
+RewriteRule ^([^/]+)\.php$ %1$1 [R=301,L]
+
+# -----------------------------------------------------------------
+# 3. Serve /about from about.php (any top-level page, no list to maintain)
+# -----------------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ $1.php [L]
+
+# Remove trailing slash on pages (real folders are left alone)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(.*/)([^/]+)/$
+RewriteRule ^([^/]+)/$ %1%2 [R=301,L]
+
+# php -- BEGIN cPanel handler (Do not edit)
+<IfModule mime_module>
+AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel handler
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

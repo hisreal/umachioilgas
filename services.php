@@ -42,7 +42,7 @@ require_once('hero-banner.php');
                         We provide reliable bulk petroleum marketing, distribution, and supply solutions to commercial, industrial, retail, and other high-volume customers.
                     </p>
 
-                    <a href="bulksupply.php" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="bulksupply" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -61,7 +61,7 @@ require_once('hero-banner.php');
                         We provide mobile fuel delivery services designed to bring petroleum products directly to customers at their preferred locations.
                     </p>
 
-                    <a href="mobilefuel.php" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="mobilefuel" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -80,7 +80,7 @@ require_once('hero-banner.php');
                         Our Retail & Depot Operations are designed to ensure that every U-Machi location delivers efficient, controlled, safe, and customer-focused petroleum services.
                     </p>
 
-                    <a href="retaildepot.php" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="retaildepot" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>

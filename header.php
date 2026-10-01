@@ -38,13 +38,14 @@
 <meta name="author" content="U-Machi Oil & Gas Ltd">
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://www.umachioilgas.com/">
+<?php $canonical_url = "https://www.umachioilgas.com/" . ((isset($page) && $page !== "home") ? $page : ""); ?>
+<link rel="canonical" href="<?php echo $canonical_url; ?>">
 
 <!-- Open Graph SEO -->
 <meta property="og:title" content="U-Machi Oil & Gas Ltd | Bulk Petroleum & Mobile Fuel Supply">
 <meta property="og:description" content="Trusted petroleum supply company delivering diesel, petrol, LPG and mobile fuel solutions to industries, construction companies, marine operators and businesses in Nigeria.">
 <meta property="og:image" content="https://www.umachioilgas.com/assets/img/logo2.png">
-<meta property="og:url" content="https://www.umachioilgas.com">
+<meta property="og:url" content="<?php echo $canonical_url; ?>">
 <meta property="og:type" content="website">
 
 <!-- Twitter SEO -->
@@ -144,7 +145,7 @@
 <div class="col-lg-3">
 
 <div class="logo">
-<a class="navbar-brand" href="index.php">
+<a class="navbar-brand" href="./">
 <img src="assets/img/logo2.png" width="1200" height="404"
 alt="U-Machi Oil and Gas Limited Nigeria Petroleum Supply Company">
 </a>
@@ -177,36 +178,36 @@ aria-label="Toggle navigation">
 <ul class="navbar-nav">
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='home') echo 'active'; ?>" href="index.php">Home</a>
+        <a class="nav-link <?php if($page=='home') echo 'active'; ?>" href="./">Home</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='about') echo 'active'; ?>" href="about.php">About</a>
+        <a class="nav-link <?php if($page=='about') echo 'active'; ?>" href="about">About</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if(in_array($page, array('services','retaildepot','bulksupply','mobilefuel'))) echo 'active'; ?>" href="services.php">Services</a>
+        <a class="nav-link <?php if(in_array($page, array('services','retaildepot','bulksupply','mobilefuel'))) echo 'active'; ?>" href="services">Services</a>
         <ul class="sub-menu">
-            <li><a href="retaildepot.php">Retail & Depot Operations</a></li>
-            <li><a href="bulksupply.php">Bulk Petroleum Marketing, Distribution & Supply</a></li>
-            <li><a href="mobilefuel.php">Mobile Fuel Services</a></li>
+            <li><a href="retaildepot">Retail & Depot Operations</a></li>
+            <li><a href="bulksupply">Bulk Petroleum Marketing, Distribution & Supply</a></li>
+            <li><a href="mobilefuel">Mobile Fuel Services</a></li>
         </ul>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='hse') echo 'active'; ?>" href="hse.php">HSE</a>
+        <a class="nav-link <?php if($page=='hse') echo 'active'; ?>" href="hse">HSE</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='industries') echo 'active'; ?>" href="industries.php">Industries</a>
+        <a class="nav-link <?php if($page=='industries') echo 'active'; ?>" href="industries">Industries</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='faq') echo 'active'; ?>" href="faq.php">Faq</a>
+        <a class="nav-link <?php if($page=='faq') echo 'active'; ?>" href="faq">Faq</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if($page=='contact') echo 'active'; ?>" href="contact.php">Contact</a>
+        <a class="nav-link <?php if($page=='contact') echo 'active'; ?>" href="contact">Contact</a>
     </li>
     
     <li class="nav-item">
@@ -214,7 +215,7 @@ aria-label="Toggle navigation">
     </li>
 
     <li class="nav-item nav-cta-item">
-        <a class="nav-cta-btn" href="assets/docs/company-profile.pdf" target="_blank" rel="noopener">Company Profile</a>
+        <a class="nav-cta-btn" href="assets/doc/company_profile.pdf" target="_blank" rel="noopener">Company Profile</a>
     </li>
 
 </ul>

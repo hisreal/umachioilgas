@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
@@ -6,7 +7,19 @@
 </url>
 
 <url>
+<loc>https://www.umachioilgas.com/about</loc>
+</url>
+
+<url>
 <loc>https://www.umachioilgas.com/services</loc>
+</url>
+
+<url>
+<loc>https://www.umachioilgas.com/retaildepot</loc>
+</url>
+
+<url>
+<loc>https://www.umachioilgas.com/bulksupply</loc>
 </url>
 
 <url>
@@ -15,6 +28,14 @@
 
 <url>
 <loc>https://www.umachioilgas.com/hse</loc>
+</url>
+
+<url>
+<loc>https://www.umachioilgas.com/industries</loc>
+</url>
+
+<url>
+<loc>https://www.umachioilgas.com/faq</loc>
 </url>
 
 <url>

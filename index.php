@@ -19,7 +19,7 @@ require_once("hero.php"); ?>
 
 						<p>With an operational presence in Port Harcourt, Rivers State, we provide seamless energy solutions to industrial, commercial, and residential clients, helping businesses and communities access the petroleum products they need to operate, grow, and thrive.
 						</p>
- 						<a href="about.php" class="main-btn">Learn More</a>
+ 						<a href="about" class="main-btn">Learn More</a>
  					</div>
  				</div>
 
@@ -66,7 +66,7 @@ require_once("hero.php"); ?>
                         We provide reliable bulk petroleum marketing, distribution, and supply solutions to commercial, industrial, retail, and other high-volume customers.
                     </p>
 
-                    <a href="bulksupply.php" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="bulksupply" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -86,7 +86,7 @@ require_once("hero.php"); ?>
                         We provide mobile fuel delivery services designed to bring petroleum products directly to customers at their preferred locations.
                     </p>
 
-                    <a href="mobilefuel.php" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="mobilefuel" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -106,7 +106,7 @@ require_once("hero.php"); ?>
                         Our Retail & Depot Operations are designed to ensure that every U-Machi location delivers efficient, controlled, safe, and customer-focused petroleum services.
                     </p>
 
-                    <a href="retaildepot.php" class="btn btn-umachi w-100 mt-3">Read More</a>
+                    <a href="retaildepot" class="btn btn-umachi w-100 mt-3">Read More</a>
 
                 </div>
             </div>
@@ -232,7 +232,7 @@ require_once("hero.php"); ?>
 						</div>
 					</div>
 				</div>
-				<div class="faq-more"><a href="faq.php" class="main-btn">Read More</a></div>
+				<div class="faq-more"><a href="faq" class="main-btn">Read More</a></div>
 
     </div>
 </div>
@@ -390,7 +390,7 @@ require_once("hero.php"); ?>
             </div>
 
             <div class="col-lg-4 col-md-12 col-12 text-lg-end text-md-start text-start">
-                <a href="contact.php" class="main-btn">Get Started Today</a>
+                <a href="contact" class="main-btn">Get Started Today</a>
             </div>
 
         </div>

@@ -59,7 +59,7 @@ require_once('hero-banner.php');
                 <h3>Partner With Us Today!</h3>
                 <p>Expand your retail network with a trusted leader in the downstream sector.</p>
             </div>
-            <a href="contact.php#quotes" class="nav-cta-btn partner-cta-btn">Contact Us Now</a>
+            <a href="contact#quotes" class="nav-cta-btn partner-cta-btn">Contact Us Now</a>
         </div>
     </div>
 </div>

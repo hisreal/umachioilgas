@@ -139,7 +139,7 @@ require_once('hero-banner.php');
                 <h3>Secure Your Bulk Supply Today</h3>
                 <p>Partner with us for seamless access to a steady supply of petroleum products.</p>
             </div>
-            <a href="contact.php#quotes" class="nav-cta-btn partner-cta-btn">Get a Quote Now</a>
+            <a href="contact#quotes" class="nav-cta-btn partner-cta-btn">Get a Quote Now</a>
         </div>
     </div>
 </div>

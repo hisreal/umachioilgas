@@ -37,7 +37,7 @@
 			<div class="footer-up">
 				<div class="row gy-4">
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<a href="index.php" class="logo">
+						<a href="./" class="logo">
 							<img style="width: 200px" src="assets/img/logo2.png" alt="Umachioilgas-logo">
 						</a>
 					
@@ -72,14 +72,14 @@
 					<div class="col-lg-2 offset-lg-1 col-md-6 com-sm-12">
 						<h5>Links</h5>
 						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li><a href="about.php">About</a></li>
-							<li><a href="services.php">Services</a></li>
-							<li><a href="mobilefuel.php">Mobile Fuel Services</a></li>
-							<li><a href="hse.php">HSE</a></li>
-							<li><a href="industries.php">Industries</a></li>
-							<li><a href="faq.php">Faq</a></li>
-							<li><a href="contact.php">Contact</a></li>
+							<li><a href="./">Home</a></li>
+							<li><a href="about">About</a></li>
+							<li><a href="services">Services</a></li>
+							<li><a href="mobilefuel">Mobile Fuel Services</a></li>
+							<li><a href="hse">HSE</a></li>
+							<li><a href="industries">Industries</a></li>
+							<li><a href="faq">Faq</a></li>
+							<li><a href="contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">

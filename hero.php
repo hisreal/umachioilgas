@@ -14,8 +14,8 @@
         <h1>Nigeria's Reliable Mobile Fuel Partner.</h1>
         <p>Fuel delivered wherever you need it, 365 days a year, at the same price as the station.</p>
         <div class="hero-actions">
-            <a href="contact.php#quotes" class="main-btn">Request a Quote</a>
-            <a href="services.php" class="hero-link">Explore our services <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <a href="contact#quotes" class="main-btn">Request a Quote</a>
+            <a href="services" class="hero-link">Explore our services <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
         </div>
     </div>
 
