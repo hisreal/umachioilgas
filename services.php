@@ -26,10 +26,10 @@ require_once('hero-banner.php');
  				</div>
  			</div>
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
 
             <!-- Service 1 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-card p-4 h-100 d-flex flex-column text-center">
 
                     <div class="service-icon mb-4">
@@ -48,7 +48,7 @@ require_once('hero-banner.php');
             </div>
 
             <!-- Service 2 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-card p-4 h-100 d-flex flex-column text-center">
 
                     <div class="service-icon mb-4">
@@ -67,26 +67,7 @@ require_once('hero-banner.php');
             </div>
 
             <!-- Service 3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card p-4 h-100 d-flex flex-column text-center">
-
-                    <div class="service-icon mb-4">
-                        <img src="assets/img/icon/oil-industry.png" alt="Fleet Fuel Management">
-                    </div>
-
-                    <h5 class="fw-bold heading">Fleet Fuel Management</h5>
-
-                    <p class="flex-grow-1 mt-3">
-                        Structured fuel supply solutions for fleet operators including scheduled deliveries, monitoring, and billing...
-                    </p>
-
-                    <a href="fleetfuel.php" class="btn btn-umachi w-100 mt-3">Read More</a>
-
-                </div>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-card p-4 h-100 d-flex flex-column text-center">
 
                     <div class="service-icon mb-4">

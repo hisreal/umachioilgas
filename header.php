@@ -123,7 +123,6 @@
    "Bulk Petroleum Supply",
    "Mobile Fuel Delivery",
    "Marine Gas Oil Supply",
-   "Fleet Fuel Management",
    "Diesel Supply"
  ]
 }
@@ -186,11 +185,10 @@ aria-label="Toggle navigation">
     </li>
 
     <li class="nav-item">
-        <a class="nav-link <?php if(in_array($page, array('services','retaildepot','bulksupply','fleetfuel','mobilefuel'))) echo 'active'; ?>" href="services.php">Services</a>
+        <a class="nav-link <?php if(in_array($page, array('services','retaildepot','bulksupply','mobilefuel'))) echo 'active'; ?>" href="services.php">Services</a>
         <ul class="sub-menu">
             <li><a href="retaildepot.php">Retail & Depot Operations</a></li>
             <li><a href="bulksupply.php">Bulk Petroleum Marketing, Distribution & Supply</a></li>
-            <li><a href="fleetfuel.php">Fleet Fuel Management</a></li>
             <li><a href="mobilefuel.php">Mobile Fuel Services</a></li>
         </ul>
     </li>

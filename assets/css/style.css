@@ -5949,56 +5949,6 @@ a.reply-btn {
 	}
 }
 
-/* Larger lead paragraph for the first block of text in a dark band */
-.section-dark .lead-text {
-	font-size: 18px;
-	line-height: 1.75;
-	color: rgba(255, 255, 255, 0.88);
-}
-
-/* Icon-tile variant of .benefit-card for short, title-only items inside a
-   dark band: centred, a lit icon tile, and the same gradient border as the
-   service cards. */
-.section-dark .benefit-card.is-tile {
-	padding: 34px 20px 30px;
-	text-align: center;
-	border: 1px solid transparent;
-	border-radius: 18px;
-	background:
-		linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
-		linear-gradient(150deg, rgba(246, 139, 52, 0.7) 0%, rgba(255, 255, 255, 0.08) 40%, rgba(255, 255, 255, 0.04) 100%) border-box;
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-	transition: box-shadow var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
-}
-
-.section-dark .benefit-card.is-tile:hover {
-	transform: translateY(-4px);
-	background:
-		linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
-		linear-gradient(150deg, #f68b34 0%, #ff5722 45%, rgba(255, 255, 255, 0.10) 100%) border-box;
-	box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35), 0 8px 32px rgba(246, 139, 52, 0.18);
-}
-
-.section-dark .benefit-card.is-tile .benefit-icon {
-	display: grid;
-	place-items: center;
-	width: 72px;
-	height: 72px;
-	margin: 0 auto 20px;
-	border-radius: 18px;
-	background: radial-gradient(circle at 30% 25%, rgba(246, 139, 52, 0.28), rgba(246, 139, 52, 0.08) 70%);
-	border: 1px solid rgba(246, 139, 52, 0.35);
-}
-
-.section-dark .benefit-card.is-tile .benefit-icon i {
-	font-size: 30px;
-}
-
-.section-dark .benefit-card.is-tile h6 {
-	margin: 0;
-	font-size: 17px;
-}
-
 /* Prose inside the HSE commitment column (profile wording). Uses the muted
    text colour for contrast; the global <p> grey is too light on white. */
 .hse-lead {
