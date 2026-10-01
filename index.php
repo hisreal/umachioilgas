@@ -272,14 +272,14 @@ require_once("hero.php"); ?>
 
 	<!-- Testimonial Section -->
 
-	<div class="testimonial-area gray-bg section-padding">			
+	<div class="testimonial-area section-padding">
 		<div class="capricorn-testimonial">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center ">
 						<div class="section-title">
 							<h6>Clients Testimonial</h6>
-							
+							<h2 class="testimonial-heading">What Our Clients Say</h2>
 						</div>
 					</div>
 				</div>
@@ -297,9 +297,7 @@ require_once("hero.php"); ?>
 					is dependable. We value their integrity.”
 				</p>
 				<div class="testimonial-author">
-					<div class="author-img">
-						<img src="assets/img/icon/user.png" alt="">
-					</div>
+					<div class="author-avatar" aria-hidden="true"><i class="bi bi-cone-striped"></i></div>
 					<div class="author-desc">
 						<h5 class="heading" >Operations Manager</h5>
 						<span>Construction Firm - Port Harcourt</span>
@@ -318,9 +316,7 @@ require_once("hero.php"); ?>
 			
 				</p>
 				<div class="testimonial-author">
-					<div class="author-img">
-						<img src="assets/img/icon/user.png" alt="">
-					</div>
+					<div class="author-avatar" aria-hidden="true"><i class="bi bi-gear-wide-connected"></i></div>
 					<div class="author-desc">
 						<h5 class="heading">Facility Manager</h5>
 						<span>Manufacturing Company - Port Harcourt</span>
@@ -337,9 +333,7 @@ require_once("hero.php"); ?>
 					never experience shortages.”
 				</p>
 				<div class="testimonial-author">
-					<div class="author-img">
-						<img src="assets/img/icon/user.png" alt="">
-					</div>
+					<div class="author-avatar" aria-hidden="true"><i class="bi bi-houses"></i></div>
 					<div class="author-desc">
 						<h5 class="heading">Estate Administrator</h5>
 						<span>Port Harcourt</span>

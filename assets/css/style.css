@@ -3913,91 +3913,186 @@ facility
 /* Testimonial Section 
 ============== */
 
+/* Testimonials
+   White section with a soft brand glow and one oversized gradient
+   quotation mark behind the heading. Cards are equal height, with a
+   gradient top edge, a lit quote tile, and a sector icon in place of a
+   client photo (there are no real photos to show). */
 .testimonial-area {
 	position: relative;
 	z-index: 1;
-	border-top: 1px solid var(--color-border);
+	overflow: hidden;
+	background:
+		radial-gradient(ellipse 60% 50% at 85% 0%, var(--glow-brand) 0%, transparent 70%),
+		var(--color-white);
+}
+
+.testimonial-area::before {
+	content: "\201C";
+	position: absolute;
+	top: -10px;
+	left: 4%;
+	font-size: 360px;
+	line-height: 1;
+	font-weight: 700;
+	background: var(--gradient-brand);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	opacity: 0.09;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.testimonial-heading {
+	font-size: 40px;
+	line-height: 1.2;
+	margin-top: 14px;
+	letter-spacing: -0.01em;
+}
+
+.testimonial-area .section-title {
+	margin-bottom: 18px;
+}
+
+/* Let each card's shadow breathe: the carousel clips overflow, so give
+   it vertical room (and cancel it out with negative margins). The shadow
+   is kept mostly downward so nothing is cut off at the sides. */
+.client-carousel .owl-stage-outer {
+	padding: 8px 0 40px;
+	margin: -8px 0 -40px;
+}
+
+/* Equal-height cards */
+.client-carousel .owl-stage {
+	display: flex;
+}
+
+.client-carousel .owl-stage::after {
+	display: none;
+}
+
+.client-carousel .owl-item {
+	display: flex;
+	flex-shrink: 0;
 }
 
 .single-client-item {
-	background: var(--color-white);
-	padding: 50px 70px 70px;
 	position: relative;
-	z-index: 1;
-	margin-top: 50px;
-	transition: .3s;
-	border-bottom: 3px solid var(--color-white);
-	box-shadow: 6px 6px 41px 0px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 44px 44px 34px;
+	margin-top: 40px;
+	background: var(--color-white);
+	border: 1px solid var(--color-border-light);
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 14px 30px -14px rgba(5, 12, 29, 0.16);
+	transition:
+		transform var(--dur-base) var(--ease-out),
+		box-shadow var(--dur-base) var(--ease-out);
+}
+
+.single-client-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: var(--gradient-brand);
+}
+
+.single-client-item:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 24px 40px -16px rgba(5, 12, 29, 0.24);
 }
 
 @media (max-width: 767px) {
 	.single-client-item {
-		padding: 30px;
+		padding: 32px 26px 26px;
+	}
+
+	.testimonial-heading {
+		font-size: 30px;
+	}
+
+	.testimonial-area::before {
+		font-size: 240px;
 	}
 }
 
-
-
-.single-client-item:hover {
-	border-bottom: 3px solid var(--color-primary);
+.testimonial-icon i {
+	display: grid;
+	place-items: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 14px;
+	font-size: 22px;
+	color: var(--color-white);
+	background: var(--gradient-brand);
+	box-shadow: 0 10px 20px -8px rgba(255, 87, 34, 0.55);
 }
-
-.single-client-item img {
-	max-width: 70px;
-	height: auto;
-	float: left;
-	border-radius: 50%;
-}
-
 
 .single-client-item p {
-    margin: 20px 0 34px;
-    font-size: 17px;
+	flex-grow: 1;
+	margin: 24px 0 28px;
+	font-size: 17px;
+	line-height: 1.75;
+	color: var(--color-text-body);
 }
 
 .testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding-top: 22px;
+	border-top: 1px solid var(--color-border-light);
+}
+
+.author-avatar {
+	flex-shrink: 0;
+	display: grid;
+	place-items: center;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	font-size: 22px;
+	color: var(--color-primary);
+	background: radial-gradient(circle at 30% 25%, rgba(246, 139, 52, 0.22), rgba(246, 139, 52, 0.07) 70%);
+	border: 1px solid rgba(246, 139, 52, 0.35);
 }
 
 .author-desc h5 {
-    font-size: 22px;
-    margin-bottom: 6px;
+	font-size: 18px;
+	margin-bottom: 2px;
 }
 
 .author-desc span {
-    font-size: 18px;
+	font-size: 14px;
+	color: var(--color-text-muted);
 }
 
-
-.testimonial-icon i {
-	font-size: 25px;
-	background: var(--color-primary);
-	padding: 15px;
-	position: absolute;
-	top: -20px;
-	color: var(--color-white);
-	z-index: 9;
-}
-
+/* Pager: small dots, with the current one stretched into a gradient pill */
 .testimonial-area .owl-dots button.owl-dot span {
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
+	margin: 0 5px;
 	background: var(--color-border);
-	margin-right: 10px;
-	margin-top: 20px;
+	border-radius: 8px;
+	transition: width var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out);
 }
 
 .testimonial-area .owl-dots button.owl-dot.active span {
-	width: 35px;
-	height: 10px;
-	background: var(--color-primary);
+	width: 32px;
+	background: var(--gradient-brand);
 }
 
 .testimonial-area .client-carousel .owl-dots {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 56px;
 }
 
 

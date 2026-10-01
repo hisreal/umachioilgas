@@ -120,13 +120,20 @@
 
 	// Testimonial Carousel
 
+	// Advances slowly on its own, pauses while hovered, and stays still for
+	// visitors who've asked for reduced motion.
+	var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 	$('.client-carousel').owlCarousel({
 		items: 1,
 		margin: 30,
 		dots: true,
 		nav: false,
 		loop: true,
-		autoplay: false,
+		autoplay: !prefersReducedMotion,
+		autoplayTimeout: 7000,
+		autoplayHoverPause: true,
+		smartSpeed: 600,
 		responsiveClass: true,
 		responsive: {
 			575: {
