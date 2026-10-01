@@ -4,9 +4,8 @@ $page = "contact";
 require_once('header.php');
  ?>
 
-<section class="contact-section section-padding bg-dark" aria-label="Contact">
+<section class="contact-section section-dark" aria-label="Contact">
   <div class="container">
-      <div class="hse-image-overlay"></div>
     <div class="text-center mb-5">
       <div class="section-title">
      

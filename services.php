@@ -11,7 +11,7 @@ require_once('hero-banner.php');
 ?>
 
 <!-- SERVICES SECTION -->
-<section class="services-section py-5 bg-light">
+<section class="services-section section-dark">
     <div class="container">
 
         <!-- Section Header -->
@@ -57,7 +57,7 @@ require_once('hero-banner.php');
 
                     <h5 class="fw-bold heading">Mobile Fuel Service</h5>
 
-                    <p class="flex-grow-1">
+                    <p class="flex-grow-1 mt-3">
                         We provide mobile fuel delivery services designed to bring petroleum products directly to customers at their preferred locations.
                     </p>
 
@@ -76,7 +76,7 @@ require_once('hero-banner.php');
 
                     <h5 class="fw-bold heading">Fleet Fuel Management</h5>
 
-                    <p class="flex-grow-1">
+                    <p class="flex-grow-1 mt-3">
                         Structured fuel supply solutions for fleet operators including scheduled deliveries, monitoring, and billing...
                     </p>
 
@@ -95,7 +95,7 @@ require_once('hero-banner.php');
 
                     <h5 class="fw-bold heading">Retail & Depot Operations</h5>
 
-                    <p class="flex-grow-1">
+                    <p class="flex-grow-1 mt-3">
                         Our Retail & Depot Operations are designed to ensure that every U-Machi location delivers efficient, controlled, safe, and customer-focused petroleum services.
                     </p>
 

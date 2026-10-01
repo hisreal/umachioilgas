@@ -90,6 +90,14 @@
 	/* Interaction */
 	--color-primary-hover: #e0782a; /* primary, ~8% darker */
 
+	/* Gradients — used for accents, borders and dark bands, not as
+	   general fills. The brand gradient follows the logo's orange-to-red. */
+	--gradient-brand: linear-gradient(135deg, #f68b34 0%, #ff5722 100%);
+	--gradient-navy: linear-gradient(160deg, #13224a 0%, #0a1430 55%, #050c1d 100%);
+	--surface-dark: #0f1c3f;           /* opaque card surface on navy bands */
+	--glow-brand: rgba(246, 139, 52, 0.18);
+	--angle: 3vw;                      /* gentle angled section edges */
+
 	/* Shape */
 	--radius-sm: 6px;
 	--radius-md: 8px;
@@ -588,7 +596,8 @@ hr {
 	height: 2px;
 	left: 0;
 	top: 50%;
-	background: var(--color-primary);
+	background: var(--gradient-brand);
+	border-radius: 2px;
 	margin-top: -1px;
 }
 
@@ -786,82 +795,6 @@ textarea:focus::-webkit-input-placeholder {
 	z-index: -1
 }
 
-
-/* Pre-Loader CSS 
-============== */
-#loader {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: var(--color-primary);
-	z-index: 999999;
-}
-
-.spinner {
-	margin: 100px auto 0;
-	width: 70px;
-	text-align: center;
-}
-
-.spinner > div {
-	width: 18px;
-	height: 18px;
-	background-color: var(--color-white);
-
-	border-radius: 100%;
-	display: inline-block;
-	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-}
-
-.spinner .bounce1 {
-	-webkit-animation-delay: -0.32s;
-	animation-delay: -0.32s;
-}
-
-.spinner .bounce2 {
-	-webkit-animation-delay: -0.16s;
-	animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-bouncedelay {
-
-	0%,
-	80%,
-	100% {
-		-webkit-transform: scale(0)
-	}
-
-	40% {
-		-webkit-transform: scale(1.0)
-	}
-}
-
-@keyframes sk-bouncedelay {
-
-	0%,
-	80%,
-	100% {
-		-webkit-transform: scale(0);
-		transform: scale(0);
-	}
-
-	40% {
-		-webkit-transform: scale(1.0);
-		transform: scale(1.0);
-	}
-}
 
 /* Scroll Top 
 ============== */
@@ -1485,6 +1418,8 @@ textarea:focus::-webkit-input-placeholder {
 	position: relative;
 	display: flex;
 	align-items: center;
+	/* Angled bottom edge, parallel to the .section-dark edges. */
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--angle)), 0 100%);
 	min-height: 480px;
 	background-size: cover;
 	background-position: center;
@@ -1830,13 +1765,47 @@ p.highlight i {
 	margin-top: 25px;
 }
 
-.info-img {
+/* Framed photo: a brand-gradient plate offset behind the image (down and
+   into the column gutter) for depth. Shared by the homepage "Who We Are"
+   photo and every interior page's overview photo. */
+.info-img,
+.feature-img {
     position: relative;
     z-index: 1;
 }
 
-.info-img img {
-    border-radius: 8px;
+.info-img::before,
+.feature-img::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    bottom: -22px;
+    left: -22px;
+    border-radius: 18px;
+    background: var(--gradient-brand);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.info-img img,
+.feature-img img {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 991px) {
+    /* Stacked layout: keep the plate inside the container padding. */
+    .info-img::before,
+    .feature-img::before {
+        top: 12px;
+        right: 12px;
+        bottom: -12px;
+        left: -10px;
+    }
 }
 
 .experience-wrap {
@@ -2540,24 +2509,60 @@ facility
 	color: var(--color-white);
 }
 
+/* Partner CTA panel: navy gradient, a brand glow behind the button side,
+   and a thin brand-gradient top edge. */
 .partner-cta {
-	background: var(--color-bg-soft);
-	border-radius: 12px;
-	padding: 45px 50px;
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	background: var(--gradient-navy);
+	border-radius: 20px;
+	padding: 50px 56px;
 	gap: 25px;
+	box-shadow: 0 24px 48px rgba(5, 12, 29, 0.18);
+}
+
+.partner-cta::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: var(--gradient-brand);
+}
+
+.partner-cta::after {
+	content: "";
+	position: absolute;
+	width: 420px;
+	height: 420px;
+	right: -120px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(246, 139, 52, 0.28) 0%, transparent 70%);
+	z-index: -1;
+	pointer-events: none;
 }
 
 .partner-cta-text h3 {
 	font-size: 28px;
 	font-weight: 600;
-	color: var(--color-heading);
+	color: var(--color-white);
 	margin-bottom: 8px;
 }
 
 .partner-cta-text p {
-	color: var(--color-text-muted);
+	color: rgba(255, 255, 255, 0.72);
 	margin-bottom: 0;
 	max-width: 480px;
+}
+
+@media (max-width: 575px) {
+	.partner-cta {
+		padding: 36px 28px;
+	}
 }
 
 .partner-cta-btn {
@@ -2568,13 +2573,44 @@ facility
 
 /* Newsletter Section  */
 
+/* Newsletter panel: brand gradient with a soft light source top-right
+   and a fine highlight ring, so it reads as a lit surface, not a flat box. */
 .newsletter-content {
 	height: 250px;
-	background: var(--color-primary);
+	background:
+		radial-gradient(circle at 85% 0%, rgba(255, 255, 255, 0.28) 0%, transparent 45%),
+		var(--gradient-brand);
 	padding: 50px;
-	border-radius: 5px;
+	border-radius: 20px;
 	position: relative;
 	z-index: 9;
+	overflow: hidden;
+	box-shadow: 0 24px 48px rgba(255, 87, 34, 0.22);
+  }
+
+.newsletter-content::after {
+	content: "";
+	position: absolute;
+	width: 340px;
+	height: 340px;
+	right: -90px;
+	bottom: -170px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	pointer-events: none;
+  }
+
+/* Scoped to outrank the site-wide button[type="submit"] rule. */
+.newsletter-content .newsletter-btn {
+	background: var(--color-navy-dark);
+	color: var(--color-white);
+	border-radius: var(--radius-md);
+	transition: background-color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+  }
+
+.newsletter-content .newsletter-btn:hover {
+	background: #13224a;
+	transform: translateY(-1px);
   }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3614,9 +3650,6 @@ facility
 	z-index: 9;
 }
 
-.feature-img img {
-    border-radius: 8px;
-}
 
 
 /* CTA Section
@@ -5066,6 +5099,174 @@ a.reply-btn {
     box-shadow: var(--shadow-lg);
 }
 
+/* Dark band — a navy gradient section with gently angled top and bottom
+   edges and soft brand glows. Alternating it with the light sections
+   gives pages rhythm instead of one continuous white scroll. */
+.section-dark {
+    position: relative;
+    isolation: isolate;
+    background: var(--gradient-navy);
+    color: rgba(255, 255, 255, 0.72);
+    clip-path: polygon(0 var(--angle), 100% 0, 100% calc(100% - var(--angle)), 0 100%);
+    padding-top: calc(var(--space-section) + var(--angle));
+    padding-bottom: calc(var(--space-section) + var(--angle));
+    overflow: hidden;
+}
+
+.section-dark::before,
+.section-dark::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.section-dark::before {
+    width: 620px;
+    height: 620px;
+    top: -220px;
+    right: -160px;
+    background: radial-gradient(circle, var(--glow-brand) 0%, transparent 70%);
+}
+
+.section-dark::after {
+    width: 480px;
+    height: 480px;
+    bottom: -200px;
+    left: -140px;
+    background: radial-gradient(circle, rgba(255, 87, 34, 0.12) 0%, transparent 70%);
+}
+
+@media (max-width: 991px) {
+    .section-dark {
+        padding-top: calc(var(--space-section-md) + var(--angle));
+        padding-bottom: calc(var(--space-section-md) + var(--angle));
+    }
+}
+
+@media (max-width: 575px) {
+    .section-dark {
+        padding-top: calc(var(--space-section-sm) + var(--angle));
+        padding-bottom: calc(var(--space-section-sm) + var(--angle));
+    }
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark .heading {
+    color: var(--color-white);
+}
+
+/* Service cards on a dark band: an opaque surface inside a 1px gradient
+   border (the padding-box/border-box background trick), warm at the
+   top-left and fading out. */
+.section-dark .service-card {
+    border: 1px solid transparent;
+    background:
+        linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
+        linear-gradient(150deg, rgba(246, 139, 52, 0.75) 0%, rgba(255, 255, 255, 0.10) 38%, rgba(255, 255, 255, 0.04) 100%) border-box;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.section-dark .service-card:hover {
+    background:
+        linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
+        linear-gradient(150deg, #f68b34 0%, #ff5722 45%, rgba(255, 255, 255, 0.10) 100%) border-box;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35), 0 8px 32px rgba(246, 139, 52, 0.18);
+}
+
+.section-dark .service-card p {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+/* Icon tile: a softly lit square instead of a bare icon. */
+.section-dark .service-icon {
+    width: 76px;
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: radial-gradient(circle at 30% 25%, rgba(246, 139, 52, 0.28), rgba(246, 139, 52, 0.08) 70%);
+    border: 1px solid rgba(246, 139, 52, 0.35);
+}
+
+.section-dark .service-icon img {
+    width: 40px;
+}
+
+/* Other components inside a dark band */
+.section-dark p,
+.section-dark .icon-list li {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Bootstrap's .text-muted is !important, so this has to be too. */
+.section-dark .text-muted {
+    color: rgba(255, 255, 255, 0.66) !important;
+}
+
+/* Light surfaces inside a dark band (e.g. the contact page's white
+   cards) go back to dark text — including anything that just inherits
+   the band's light colour, like form labels and <address>. */
+.section-dark .card {
+    color: var(--color-text-body);
+}
+
+.section-dark .card h5,
+.section-dark .card h6,
+.section-dark .card .heading {
+    color: var(--color-heading);
+}
+
+.section-dark .card p {
+    color: var(--color-text-muted);
+}
+
+.section-dark .card .text-muted {
+    color: var(--color-text-muted) !important;
+}
+
+.section-dark .benefit-card {
+    border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+.section-dark .benefit-card:hover {
+    border-top-color: var(--color-primary);
+}
+
+.section-dark .step-card {
+    border: 1px solid transparent;
+    background:
+        linear-gradient(var(--surface-dark), var(--surface-dark)) padding-box,
+        linear-gradient(150deg, rgba(246, 139, 52, 0.7) 0%, rgba(255, 255, 255, 0.08) 40%, rgba(255, 255, 255, 0.04) 100%) border-box;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.section-dark .step-card:hover {
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35), 0 8px 32px rgba(246, 139, 52, 0.18);
+}
+
+/* Card buttons go quiet (outline) so four solid orange blocks don't
+   compete; they fill with the brand gradient on hover. */
+.section-dark .btn-umachi {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.22);
+    color: var(--color-white);
+}
+
+.section-dark .btn-umachi:hover {
+    background: var(--gradient-brand);
+    border-color: transparent;
+    color: var(--color-white);
+}
+
 .service-icon img {
     width: 60px;
 }
@@ -5126,12 +5327,12 @@ a.reply-btn {
     height: 65px;
     line-height: 65px;
     border-radius: 50%;
-    background: linear-gradient(135deg,#ed3237,#df4146);
+    background: var(--gradient-brand);
     color: var(--color-white);
     font-weight: 700;
     font-size: 20px;
     margin: 0 auto 18px;
-    box-shadow: 0 12px 25px rgba(209, 62, 62, 0.15);
+    box-shadow: 0 12px 25px rgba(255, 87, 34, 0.28);
 }
 
 /* Step Card */
@@ -5301,7 +5502,8 @@ a.reply-btn {
 .hse-goal-box {
     margin: 0 0 90px;
     padding: 4px 0 4px 24px;
-    border-left: 3px solid var(--color-primary);
+    border-left: 3px solid;
+    border-image: linear-gradient(180deg, #f68b34, #ff5722) 1;
 }
 
 .hse-goal-box p {
@@ -5313,7 +5515,19 @@ a.reply-btn {
 }
 
 /* Contact Section styling */
-.contact-section .card { border-radius: 12px; }
+.contact-section .card { border-radius: 18px; overflow: hidden; }
+
+/* Thin brand-gradient top edge, matching the partner CTA panels. */
+.contact-section .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-brand);
+  z-index: 1;
+}
 .icon-circle {
   width: 56px; height:56px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
@@ -5343,6 +5557,8 @@ a.reply-btn {
 	position: relative;
 	display: flex;
 	align-items: center;
+	/* Angled bottom edge, parallel to the .section-dark edges. */
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--angle)), 0 100%);
 	min-height: 600px;
 	height: 82svh;
 	max-height: 860px;

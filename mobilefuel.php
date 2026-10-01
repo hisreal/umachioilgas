@@ -120,8 +120,12 @@ require_once('hero-banner.php');
 </div>
 
 
-    <!-- How It Works -->
-    <div class="mb-5">
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="section-dark">
+    <div class="container">
 
             <div class="row">
  				<div class="col-xl-12 col-lg-12 text-center">
@@ -165,7 +169,10 @@ require_once('hero-banner.php');
 
         </div>
     </div>
+</section>
 
+<section class="section-padding">
+<div class="container">
 
     <!-- Benefits -->
     <div class="text-center">

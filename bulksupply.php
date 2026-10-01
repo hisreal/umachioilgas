@@ -48,7 +48,7 @@ require_once('hero-banner.php');
 </div>
 
 <!-- Who We Serve -->
-<section class="services-section py-5 bg-light">
+<section class="services-section section-dark">
     <div class="container">
 
         <div class="row">
@@ -62,7 +62,7 @@ require_once('hero-banner.php');
 
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <p style="color:#6a6a6a;">
+                <p>
                     Through our bulk petroleum operations, U-Machi Oil & Gas Ltd. serves as a dependable supply
                     partner to:
                 </p>

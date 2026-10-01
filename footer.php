@@ -16,7 +16,7 @@
 
 							<input type="email" name="email" placeholder="Enter Your Mail" required>
 
-							<button style="background:black" type="submit">
+							<button class="newsletter-btn" type="submit">
 								Subscribe Now
 							</button>
 

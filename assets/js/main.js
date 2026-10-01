@@ -410,14 +410,4 @@
 		$(this).addClass("active");
 	});
 
-	// Preloader
-	setTimeout(function () {
-		$("#loader").fadeOut(600);
-	}, 200);
-
-	jQuery(window).on("load", function () {
-		jQuery(".site-preloader-wrap, .slide-preloader-wrap").fadeOut(1000);
-	});
-
-
 }(jQuery));

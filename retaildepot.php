@@ -52,7 +52,7 @@ require_once('hero-banner.php');
 </div>
 
 <!-- Retail Ventures & Gas -->
-<section class="services-section py-5 bg-light">
+<section class="services-section section-dark">
     <div class="container">
 
         <div class="row">
@@ -60,7 +60,7 @@ require_once('hero-banner.php');
                 <div class="section-title">
                     <h6>Retail Ventures & Gas</h6>
                     <br><br>
-                    <p class="mb-0" style="color:#6a6a6a;">
+                    <p class="mb-0">
                         Our Retail Ventures & Gas initiative expands the traditional filling-station model by
                         introducing complementary businesses that enhance customer convenience and create additional
                         value across our retail locations.
