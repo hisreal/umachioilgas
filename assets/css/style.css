@@ -5641,14 +5641,29 @@ a.reply-btn {
     background: url('assets/img/about-img.webp') center/cover no-repeat;
     min-height: 600px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding: 60px;
 }
 
+/* Photo shows through at the top; fades to navy where the text sits. */
 .hse-image-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(rgba(10,20,30,0.85), rgba(10,20,30,0.85));
+    background: linear-gradient(180deg, rgba(10,20,30,0.05) 0%, rgba(10,20,30,0.35) 40%, rgba(10,20,30,0.92) 80%);
+}
+
+.hse-photo {
+    margin: 0 0 28px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.hse-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
 }
 
 .hse-image-content {
@@ -6176,4 +6191,15 @@ a.reply-btn {
 	.roadmap-card:hover {
 		transform: none;
 	}
+}
+
+/* Stacked layout: the text fills the panel, so keep the overlay solid enough to read. */
+@media (max-width: 991px) {
+    .hse-image {
+        padding: 40px 30px;
+    }
+
+    .hse-image-overlay {
+        background: linear-gradient(180deg, rgba(10,20,30,0.78) 0%, rgba(10,20,30,0.88) 100%);
+    }
 }

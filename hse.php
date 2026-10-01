@@ -3,7 +3,7 @@ $title = "Health Safety & Environment | U-Machi Oil & Gas Ltd";
 $page = "hse";
 require_once('header.php'); ?>
 <?php
-$hero_bg = 'assets/img/hse.webp';
+$hero_bg = 'assets/img/hse/hse-12.webp';
 $hero_title = 'Safety Is Non-Negotiable';
 $hero_subtitle = 'At U-Machi Oil & Gas Ltd, safety is at the core of everything we do. We operate with strict adherence to industry regulations and environmental standards.';
 require_once('hero-banner.php');
@@ -16,7 +16,7 @@ require_once('hero-banner.php');
         <div class="row g-0 align-items-stretch">
 
             <!-- Left Refinery Background -->
-            <div style="background: url('assets/img/about-img.webp') center/cover no-repeat;" class="col-lg-6 hse-image">
+            <div style="background: url('assets/img/hse/hse-4.webp') center top/cover no-repeat;" class="col-lg-6 hse-image">
                 <div class="hse-image-overlay"></div>
                 <div class="hse-image-content text-white">
                     <h2 style="color: white" class="fw-bold">Committed to Safe & Responsible Operations</h2>
@@ -135,6 +135,10 @@ require_once('hero-banner.php');
                                 </div>
                             </div>
  			            </div>
+                    <div class="hse-photo">
+                        <img src="assets/img/hse/hse-13.webp" alt="Smiling U-Machi technician in safety gear giving a thumbs-up at a station" loading="lazy">
+                    </div>
+
                     <blockquote class="hse-goal-box">
                         <p>
                             Our commitment is simple: to conduct every operation safely and responsibly, protect
