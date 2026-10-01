@@ -87,7 +87,8 @@ require_once('hero-banner.php');
 							station pricing, ensuring convenience without unnecessary cost increases.
 						</div>
 					</div>
-<!-- 4 -->
+</div>
+				<!-- 4 -->
         <div class="accordion-items">
             <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
@@ -241,7 +242,6 @@ require_once('hero-banner.php');
             via our website.
         </div>
     </div>
-</div>
 </div>
                         </div>
                     </div>

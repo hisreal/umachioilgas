@@ -251,12 +251,9 @@ require_once("hero.php"); ?>
 							station pricing, ensuring convenience without unnecessary cost increases.
 						</div>
 					</div>
-
-					                <center><a href="faq.php" class="main-btn">Read More</a></center>
-									<br>
-									<br>
-
 				</div>
+				<div class="faq-more"><a href="faq.php" class="main-btn">Read More</a></div>
+
     </div>
 </div>
 </div>
@@ -365,28 +362,31 @@ require_once("hero.php"); ?>
  				<div class="col-lg-4 col-md-6 col-sm-12">
  					<div class="single-facility-area wow fadeInLeft" data-wow-delay=".2s">
 						<div class="facility-icon">
- 						<img style="width: 100px"  src="assets/img/icon/food-stand.png" alt="">
+ 						<img src="assets/img/icon/food-stand.png" alt="" width="56" height="56" loading="lazy">
  						</div>
 					
- 						<h4 >Mini Mart</h4>
+ 						<h4>Mini Mart</h4>
+						<p>Convenient access to everyday consumer products and essential items.</p>
 
  					</div>
  				</div>
  				<div class="col-lg-4 col-md-6 col-sm-12">
  					<div class="single-facility-area wow fadeInLeft" data-wow-delay=".4s">
  						<div class="facility-icon">
- 							<img style="width: 100px"  src="assets/img/icon/haircut.png" alt="">
+ 							<img src="assets/img/icon/haircut.png" alt="" width="56" height="56" loading="lazy">
  						</div>
- 						<h4>Hair Cut Studio</h4>
+ 						<h4>Haircut Studio</h4>
+ 						<p>A convenient personal-grooming service within selected U-Machi locations.</p>
 
  					</div>
  				</div>
  				<div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".6s">
  					<div class="single-facility-area">
  						<div class="facility-icon">
- 							<img style="width: 100px" src="assets/img/icon/lubricant.png" alt="">
+ 							<img src="assets/img/icon/lubricant.png" alt="" width="56" height="56" loading="lazy">
  						</div>
  						<h4>Lubricant Store</h4>
+ 						<p>Essential automotive and equipment lubricants for vehicle owners, fleet operators, and mechanics.</p>
 
  					</div>
  				</div>
@@ -394,11 +394,8 @@ require_once("hero.php"); ?>
  			</div>
  		</div>
  	</div>
-<br>
-<br>
-
-	<!-- Newsletter Section -->
-<div class="newsletter-section">
+<!-- Newsletter Section -->
+<div class="newsletter-section home-cta">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             
@@ -419,6 +416,4 @@ require_once("hero.php"); ?>
         </div>
     </div>
 </div>
-<br>
-<br>
 <?php require_once('footer.php'); ?>

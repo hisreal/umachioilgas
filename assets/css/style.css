@@ -1769,13 +1769,15 @@ p.highlight i {
    into the column gutter) for depth. Shared by the homepage "Who We Are"
    photo and every interior page's overview photo. */
 .info-img,
-.feature-img {
+.feature-img,
+.faq-img-wrap {
     position: relative;
     z-index: 1;
 }
 
 .info-img::before,
-.feature-img::before {
+.feature-img::before,
+.faq-img-wrap::before {
     content: "";
     position: absolute;
     top: 22px;
@@ -1789,7 +1791,8 @@ p.highlight i {
 }
 
 .info-img img,
-.feature-img img {
+.feature-img img,
+.faq-img-wrap img {
     position: relative;
     display: block;
     width: 100%;
@@ -1800,7 +1803,8 @@ p.highlight i {
 @media (max-width: 991px) {
     /* Stacked layout: keep the plate inside the container padding. */
     .info-img::before,
-    .feature-img::before {
+    .feature-img::before,
+    .faq-img-wrap::before {
         top: 12px;
         right: 12px;
         bottom: -12px;
@@ -2275,13 +2279,41 @@ facility
 
 
 /* Facility Section
-============== */
+   A photo band under a navy gradient with a brand glow, angled top and
+   bottom edges (matching .section-dark), and each venture shown as a lit
+   icon tile with a one-line description, separated by hairlines. */
 
 .facility-area{
 	background-image: url(../img/umachi.webp);
 	background-size: cover;
+	background-position: center;
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
+	clip-path: polygon(0 var(--angle), 100% 0, 100% calc(100% - var(--angle)), 0 100%);
+	padding-top: calc(var(--space-section) + var(--angle));
+	padding-bottom: calc(var(--space-section) + var(--angle));
+}
+
+@media (max-width: 991px) {
+	.facility-area {
+		padding-top: calc(var(--space-section-md) + var(--angle));
+		padding-bottom: calc(var(--space-section-md) + var(--angle));
+	}
+}
+
+@media (max-width: 575px) {
+	.facility-area {
+		padding-top: calc(var(--space-section-sm) + var(--angle));
+		padding-bottom: calc(var(--space-section-sm) + var(--angle));
+	}
+}
+
+.facility-area .overlay-2 {
+	background:
+		radial-gradient(circle at 82% 0%, rgba(246, 139, 52, 0.28) 0%, transparent 55%),
+		linear-gradient(160deg, rgba(19, 34, 74, 0.94) 0%, rgba(5, 12, 29, 0.9) 100%);
+	opacity: 1;
 }
 
 .facility-area h2 {
@@ -2291,7 +2323,7 @@ facility
 .single-facility-area {
 	text-align: center;
 	margin-top: 50px;
-	overflow: hidden;
+	padding: 0 28px;
 }
 
 .single-facility-area h5 {
@@ -2303,27 +2335,49 @@ facility
 
 .single-facility-area h4 {
 	color: var(--color-white);
-	font-size: 18px;
-	font-weight: 500;
-	margin: 20px 0;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0 0 10px;
+}
+
+.single-facility-area p {
+	max-width: 280px;
+	margin: 0 auto;
+	font-size: 15px;
+	line-height: 1.65;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+/* Hairline between ventures (desktop only; they stack on smaller screens) */
+@media (min-width: 992px) {
+	.facility-area .row > [class*="col-"] + [class*="col-"] .single-facility-area {
+		border-left: 1px solid rgba(255, 255, 255, 0.12);
+	}
 }
 
 .facility-icon {
 	position: relative;
+	display: grid;
+	place-items: center;
+	width: 104px;
+	height: 104px;
+	margin: 0 auto 24px;
+	border-radius: 28px;
+	background: radial-gradient(circle at 30% 25%, rgba(246, 139, 52, 0.30), rgba(246, 139, 52, 0.08) 70%);
+	border: 1px solid rgba(246, 139, 52, 0.4);
+	box-shadow: 0 18px 36px -14px rgba(246, 139, 52, 0.45);
+	transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
 }
 
 .facility-icon img {
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px transparent;
+	width: 56px;
+	height: auto;
 }
 
-/* Icon hover: a small lift (was a 1.5s "buzz" shake). */
-.single-facility-area img {
-	transition: transform var(--dur-fast) var(--ease-out);
-}
-
-.single-facility-area:hover img {
+/* Hover: the whole tile lifts (was the bare icon shaking). */
+.single-facility-area:hover .facility-icon {
 	transform: translateY(-4px);
+	box-shadow: 0 24px 40px -14px rgba(246, 139, 52, 0.6);
 }
 
 
@@ -4368,10 +4422,6 @@ facility
 	letter-spacing: 1px;
 }
 
-.faq-img-wrap img {
-    border-radius: 8px;
-}
-
 /* Blog-Classic Page 
 ============== */
 
@@ -4920,93 +4970,127 @@ a.reply-btn {
 }
 
 
-/* FAQ Section  */
+/* FAQ accordion (homepage + faq.php)
+   Each question is one rounded card (the .accordion-items wrapper)
+   instead of two stacked boxes. The +/- sits in a small circle that
+   fills with the brand gradient when the item is open. */
+.cp-custom-accordion .accordion-items {
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    border-radius: 16px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition:
+        border-color var(--dur-base) var(--ease-out),
+        box-shadow var(--dur-base) var(--ease-out);
+}
 
-.cp-custom-accordion .accordion-buttons {    
+.cp-custom-accordion .accordion-items:hover {
+    border-color: rgba(246, 139, 52, 0.45);
+}
+
+/* Highlight the open item (progressive: needs :has, otherwise the
+   circle fill below still shows which one is open). */
+.cp-custom-accordion .accordion-items:has(.accordion-buttons:not(.collapsed)) {
+    border-color: rgba(246, 139, 52, 0.6);
+    box-shadow: 0 14px 30px -16px rgba(255, 87, 34, 0.35);
+}
+
+.cp-custom-accordion .accordion-buttons {
     position: relative;
     width: 100%;
-    padding: 20px 40px 20px 40px;
-    text-align: left;    
-    font-size: 20px;
-    font-weight: 500;
-    border: 1px solid #CBCBCB;    
+    padding: 22px 70px 22px 28px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-heading);
+    border: 0;
     background: transparent;
-    margin-bottom: 20px;
-  }
+    margin: 0;
+    cursor: pointer;
+}
 
-  .cp-custom-accordion .accordion-buttons span {
+.cp-custom-accordion .accordion-buttons span {
     font-size: 15px;
     margin-right: 15px;
 }
-  
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .cp-custom-accordion .accordion-buttons {
-      padding: 20px 0px 20px 20px;
-    }
-  }
-  @media (max-width: 767px) {
-    .cp-custom-accordion .accordion-buttons {
-      padding: 20px;      
-      font-size: 18px;
-	  line-height: 25px;
-    }
-  }
 
-  .cp-custom-accordion .accordion-buttons::after {
+.cp-custom-accordion .accordion-buttons::after {
     position: absolute;
     content: "\f068";
     font-family: "Line Awesome Free";
-    top: 35%;    
-    right: 30px;
-    font-size: 24px;
-    font-weight: 500;
+    font-weight: 900;
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: var(--color-white);
+    background: var(--gradient-brand);
     opacity: 1;
-  }
-  @media (max-width: 767px) {
-    .cp-custom-accordion .accordion-buttons::after {
-      top: 35px;
-      right: 25px;
-      font-size: 16px;
-    }
-  }
-  .cp-custom-accordion .accordion-buttons.collapsed::after {
-    content: "\f067";    
-  }
-  .cp-custom-accordion .collapsed {
+    transition:
+        background-color var(--dur-fast) var(--ease-out),
+        color var(--dur-fast) var(--ease-out);
+}
+
+.cp-custom-accordion .accordion-buttons.collapsed::after {
+    content: "\f067";
+    color: var(--color-primary);
+    background: rgba(246, 139, 52, 0.12);
+}
+
+.cp-custom-accordion .accordion-buttons:hover::after {
+    background: var(--gradient-brand);
+    color: var(--color-white);
+}
+
+.cp-custom-accordion .collapsed {
     position: relative;
     z-index: 9;
-  }
-  .cp-custom-accordion .accordion-body {
+}
+
+.cp-custom-accordion .accordion-body {
     background-color: transparent;
-    border: 1px solid #CBCBCB;    
-    color: var(--color-text-mid);
-    padding: 20px 40px 20px 40px;    
-    position: relative;
+    border: 0;
+    border-top: 1px solid var(--color-border-light);
+    margin: 0 28px;
+    padding: 20px 0 24px;
+    color: var(--color-text-muted);
     font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
-    z-index: 1;
-    margin-bottom: 20px;
-  }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .cp-custom-accordion .accordion-body {
-      padding-right: 25px;
-      padding-bottom: 0;
+    line-height: 1.7;
+}
+
+.cp-custom-accordion .accordion-body p:last-child,
+.cp-custom-accordion .accordion-body ul:last-child {
+    margin-bottom: 0;
+}
+
+.faq-more {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .cp-custom-accordion .accordion-buttons {
+        padding: 18px 60px 18px 20px;
+        font-size: 16px;
     }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .cp-custom-accordion .accordion-body {
-      padding-right: 30px;
-      padding-bottom: 0;
+
+    .cp-custom-accordion .accordion-buttons::after {
+        right: 16px;
     }
-  }
-  @media (max-width: 767px) {
+
     .cp-custom-accordion .accordion-body {
-      padding-right: 30px;
-      padding-left: 30px;
+        margin: 0 20px;
     }
-  }
-  
+}
+
   .faq-section-bg {
     max-width: calc(100% - 10px);
 	background-color: var(--color-white);
@@ -5813,5 +5897,38 @@ a.reply-btn {
 	.hero-content p {
 		font-size: 16px;
 		margin-bottom: 28px;
+	}
+}
+
+/* Homepage call-to-action strip (after the Facility band): the first line
+   is the statement, the second the supporting copy. Scoped with .home-cta
+   because .newsletter-section is also the footer's subscribe panel. */
+.home-cta {
+	padding: 72px 0 24px;
+}
+
+.home-cta .section-title p {
+	margin: 0;
+	font-size: 17px;
+	line-height: 1.7;
+	color: var(--color-text-muted);
+}
+
+.home-cta .section-title p:first-child {
+	margin-bottom: 8px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	color: var(--color-heading);
+}
+
+@media (max-width: 767px) {
+	.home-cta {
+		padding: 48px 0 16px;
+	}
+
+	.home-cta .section-title p:first-child {
+		font-size: 24px;
 	}
 }
