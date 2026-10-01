@@ -5932,3 +5932,10 @@ a.reply-btn {
 		font-size: 24px;
 	}
 }
+
+/* Larger lead paragraph for the first block of text in a dark band */
+.section-dark .lead-text {
+	font-size: 18px;
+	line-height: 1.75;
+	color: rgba(255, 255, 255, 0.88);
+}

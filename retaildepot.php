@@ -51,31 +51,46 @@ require_once('hero-banner.php');
     </div>
 </div>
 
-<!-- Retail Ventures & Gas -->
+<!-- Retail Ventures & Gas (content from the company profile) -->
 <section class="services-section section-dark">
     <div class="container">
 
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 text-center">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
                 <div class="section-title">
                     <h6>Retail Ventures & Gas</h6>
-                    <br><br>
-                    <p class="mb-0">
-                        Our Retail Ventures & Gas initiative expands the traditional filling-station model by
-                        introducing complementary businesses that enhance customer convenience and create additional
-                        value across our retail locations.
-                    </p>
+                </div>
+                <p class="lead-text mt-4">
+                    Our Retail Ventures &amp; Gas initiative expands the traditional filling-station model by
+                    introducing complementary businesses that enhance customer convenience while creating
+                    additional value across our retail locations. These ventures are designed to transform
+                    U-Machi facilities into convenient, customer-oriented destinations where visitors can access
+                    a range of essential products and lifestyle services alongside their petroleum needs.
+                </p>
+                <p>
+                    Together, these complementary ventures form part of U-Machi&rsquo;s broader strategy to
+                    develop modern, diversified, and customer-centric retail locations that go beyond
+                    conventional fuel retailing and create multiple points of value for customers.
+                </p>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="feature-img">
+                    <!-- PLACEHOLDER IMAGE: swap src for the Retail Ventures & Gas photo when ready -->
+                    <img src="assets/img/umachi.webp" alt="U-Machi retail location with Mini Mart, Haircut Studio and Lubricant Store" loading="lazy">
                 </div>
             </div>
+
         </div>
 
-        <div class="row g-4 mt-2">
+        <div class="row g-4 mt-4">
 
             <div class="col-lg-4 col-md-6">
                 <div class="benefit-card">
                     <div class="benefit-icon"><i class="bi bi-cart3"></i></div>
                     <h6 class="fw-bold heading">Mini Mart</h6>
-                    <p class="text-muted">Convenient access to everyday consumer products and essential items at our retail locations.</p>
+                    <p class="text-muted">Provides customers with convenient access to everyday consumer products and essential items, enhancing the overall experience of visiting our retail locations.</p>
                 </div>
             </div>
 
@@ -83,7 +98,7 @@ require_once('hero-banner.php');
                 <div class="benefit-card">
                     <div class="benefit-icon"><i class="bi bi-scissors"></i></div>
                     <h6 class="fw-bold heading">Haircut Studio</h6>
-                    <p class="text-muted">A convenient personal-grooming service within selected U-Machi locations.</p>
+                    <p class="text-muted">Introduces a convenient personal-grooming service within selected U-Machi locations, allowing customers to access an additional lifestyle service during their visit.</p>
                 </div>
             </div>
 
@@ -91,7 +106,7 @@ require_once('hero-banner.php');
                 <div class="benefit-card">
                     <div class="benefit-icon"><i class="bi bi-droplet-half"></i></div>
                     <h6 class="fw-bold heading">Lubricant Store</h6>
-                    <p class="text-muted">Essential automotive and equipment lubricants for vehicle owners, fleet operators, and mechanics.</p>
+                    <p class="text-muted">Provides access to essential automotive and equipment lubricants, serving vehicle owners, fleet operators, mechanics, businesses, and other customers who require quality lubrication products for vehicle and equipment maintenance.</p>
                 </div>
             </div>
 
