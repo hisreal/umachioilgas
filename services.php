@@ -18,7 +18,7 @@ require_once('hero-banner.php');
       		<div class="row">
  				<div class="col-xl-12 col-lg-12 text-center">
  					<div class="section-title">
- 						<h6>Why Choose Us</h6>
+ 						<h6>What we do</h6>
 						<br>
 						<br>
 						<br>

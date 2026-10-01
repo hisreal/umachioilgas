@@ -2284,7 +2284,7 @@ facility
    icon tile with a one-line description, separated by hairlines. */
 
 .facility-area{
-	background-image: url(../img/umachi.webp);
+	background-image: url(../img/facility-bg.webp);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -2312,7 +2312,7 @@ facility
 .facility-area .overlay-2 {
 	background:
 		radial-gradient(circle at 82% 0%, rgba(246, 139, 52, 0.28) 0%, transparent 55%),
-		linear-gradient(160deg, rgba(19, 34, 74, 0.94) 0%, rgba(5, 12, 29, 0.9) 100%);
+		linear-gradient(160deg, rgba(19, 34, 74, 0.86) 0%, rgba(5, 12, 29, 0.8) 100%);
 	opacity: 1;
 }
 
