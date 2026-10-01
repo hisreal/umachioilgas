@@ -1931,6 +1931,7 @@ p.highlight i {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	border-radius: var(--radius-lg);
 	transition: all 2s ease-out;
 }
 
@@ -2011,7 +2012,13 @@ p.highlight i {
 }
 
 /* Image hover: a gentle push-in (was a 130% zoom over 2s). */
+/* All four photos share one 3:2 frame (one source image is a slightly
+   different ratio); cropped with object-fit, never stretched. */
 .xtra-serve-area img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
 	transition: transform var(--dur-slow) var(--ease-out);
 }
 
@@ -2736,6 +2743,12 @@ facility
 	margin-top: 5px;
 	color: #9BA2AD;
   }
+  /* A global li { display: inline-block } would otherwise run the footer
+     links together on one line. */
+  .footer-area ul li {
+	display: block;
+  }
+
   .footer-area ul li a {
 	font-size: 17px;
 	display: block;
